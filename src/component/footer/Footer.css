@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;     
+     border: 1px solid rgb(23, 18, 18);
+     justify-content: right;
+     
+
+}
+
+
+
+
+.menu {
+    
+    display: flex;
+    
+      
+}
+
+.submenu {
+    padding: 50px;
+    
+    
+}
+
+.submenu h1 {
+    font-size: 20px;
+    font-style: italic;
+    
+}
+
+.submenu p {
+    font-size: 13px;
+    cursor: pointer ;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;    
+    height: 30px;
+    
+
+
+}
+
+

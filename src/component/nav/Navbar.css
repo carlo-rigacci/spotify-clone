@@ -4,12 +4,37 @@
     box-sizing: border-box;
 }
 
-nav{
-    
+nav {
     display: flex;
     justify-content: right;
     align-items: center;
+    height: 40px;
+    
+}
+
+.wrapper{
+    margin: 0 auto;
+     max-width: 1420px;
 
 }
 
+.btn1 {
+    font-size: 15px;    
+    margin: 20px;
 
+}
+
+.btn2 {
+    font-size: 15px;
+    width: 70px;
+    border: 1px solid black ;
+    border-radius: 20px;
+    
+    
+
+}
+
+.btn2:hover {
+    font-size: 17px;
+    width: 90px;
+}

@@ -6,10 +6,10 @@ export default Navbar
 
 function Navbar () {
     return (           
-    <nav>
+    <nav className='Wrapper'>
 
-       <button className=''>Sign Up</button>
-       <button>Log In</button>
+       <button className='btn1'>Sign Up</button>
+       <button className='btn2'>Log In</button>
        
    
     </nav>
