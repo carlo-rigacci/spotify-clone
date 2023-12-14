@@ -1,108 +1,152 @@
 /* eslint-disable no-unused-vars */
-import playImage from "../assets/SWHT.jpg"
+import heart from "../assets/heart-431.svg"
+import playImage from "../assets/cai.jpg"
+
 export default function Playlist() {
+
   const titleSong = [
     {
       id: 1, 
-      title : "hips dont lie",
+      title : "Acadian Driftwood",
+      artist : "jk rowline",
       Album : "none",
-      Release : "december",
+      Release : "guilio",
       added : "december",
       instock : true
     }, {
       id: 1, 
-      title : "hips dont lie",
+      title : "Ac-Cent-Tchu-Ate The Positive",
+      artist : "arijit sing ",
       Album : "none",
-      Release : "december",
+      Release : "6 th february ",
       added : "december",
       instock : true
     }, {
       id: 1, 
-      title : "hips dont lie",
+      title : "Act Naturally",
+      artist : "jk rowline",
       Album : "none",
       Release : "december",
+      added : "gennio",
+      instock : true
+    },{
+      id: 1, 
+      title : "After Hours",
+      artist : "jk rowline",
+      Album : "none",
+      Release : "guilio",
       added : "december",
       instock : true
-    }
+    }, {
+      id: 1, 
+      title : "Aftermath",
+      artist : "arijit sing ",
+      Album : "none",
+      Release : "6 th february ",
+      added : "december",
+      instock : true
+    },{
+      id: 1, 
+      title : "Ain't That Just Like A Woman",
+      artist : "jk rowline",
+      Album : "none",
+      Release : "guilio",
+      added : "december",
+      instock : true
+    }, {
+      id: 1, 
+      title : "Albert Flasher",
+      artist : "arijit sing ",
+      Album : "none",
+      Release : "6 th february ",
+      added : "december",
+      instock : true
+    }, 
   ]
-
+  const listItems = titleSong.map((song , i) =>
+  
+            <tr key={i} className=" border-gray-200 dark:border-gray-700 hover:border">
+                <th scope="row" className="px-3 py-1 font-medium ">
+                    
+                    <div className="flex">
+                    <img className="mr-6 w-[60px] h-[60px]" src="https://placekitten.com/g/200/200"/>
+                      <div className="flex-col ">
+                      <p className=" mb-2 text-lg text-white">{song.title}</p>
+                      <p className="text-white text-sm">{song.artist} </p>
+                      </div>
+                    </div>
+                </th>
+                <td className="px-6 py-4 text-white">
+                    {song.Album}
+                </td>
+                <td className="px-6 py-4 text-white dark:bg-gray-800">
+                    {song.Release}
+                </td>
+                <td className="px-6 py-4 text-white">
+                    {song.added}
+                </td>
+            </tr>
+            
+  );
   return (
-    <div>
+    <div className="bg-gradient-to-r from-violet-800 to-black">
         <div className="flex-col">
-          <img className="bg-cover bg-no-repeat bg-bottom w-4/5 h-40" src={playImage} />
+          
+          <img className=" bg-center w-4/5 h-40" src={playImage} />
         <div className="flex">
-          <table  className="w-4/5 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase dark:text-gray-400">
-            <tr>
-                <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+          <table  className="w-4/5 text-sm text-left rtl:text-right text-gray-500  dark:text-gray-400">
+            <thead>
+              <tr className="flex justify-between ">
+                <td className="flex">
+                <button type="button" class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-3xl text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Play</button> <img className="h-[34px] ml-4 hover:blur-sm" src= {heart}/>
+                <p className="text-lg ml-5 text-white hover:cursor-pointer">...</p>
+                </td>
+              </tr>
+            </thead>
+          <thead className=" text-xs text-gray-700 uppercase dark:text-gray-400">
+            <tr className="text-white">
+                <th scope="col" className="px-6 py-3  dark:bg-gray-800">
                 Title
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th scope="col" className="px-6 py-3 ">
                 Album
                 </th>
                 <th scope="col" className="px-6 py-3">
                 Release Date
                 </th>
-                <th scope="col" className="px-6 py-3 bg-gray-50 dark:bg-gray-800">
+                <th scope="col" className="px-6 py-3  dark:bg-gray-800">
                 Data added
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr className="border-b border-gray-200 dark:border-gray-700">
-                <th scope="row" className="px-3 py-1 font-medium text-gray-900 bg-gray-50 dark:text-white dark:bg-gray-800">
+            <tr className=" border-gray-200 dark:border-gray-700 text-white hover:border">
+                <th scope="row" className="px-3 py-1 font-medium ">
                     
                     <div className="flex">
                     <img className="mr-6 w-[60px] h-[60px]" src="https://placekitten.com/g/200/200"/>
-                      <div className="flex-col">
-                      <p className="text-gray-600 mb-2 text-lg">Hipes dont lie</p>
-                      <p className="text-gray-600 text-sm">With J. Cole, Quavo, Ty Dollar </p>
+                      <div className="flex-col text-white">
+                      <p className="text-white mb-2 text-lg">Hipes dont lie</p>
+                      <p className="text-white text-sm">With J. Cole, Quavo, Ty Dollar </p>
                       </div>
                     </div>
                 </th>
-                <td className="px-6 py-4">
+                <td className="px-6 py-4 ">
                     None
                 </td>
-                <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                <td className="px-6 py-4  dark:bg-gray-800">
                     December
                 </td>
-                <td className="px-6 py-4">
+                <td className="px-6 py-4 ">
                     December
                 </td>
             </tr>
             </tbody>
-            
-      
-    {
-       titleSong.map((e, i)=> {
-        <tr key={i}> 
-        <tbody>
-            <tr className="border-b border-gray-200 dark:border-gray-700">
-                <th scope="row" className="px-3 py-1 font-medium text-gray-900 bg-gray-50 dark:text-white dark:bg-gray-800">
-                    
-                    <div className="flex">
-                    <img className="mr-6 w-[60px] h-[60px]" src="https://placekitten.com/g/200/200"/>
-                      <div className="flex-col">
-                      <p className="text-gray-600 mb-2 text-lg">{e.title}</p>
-                      <p className="text-gray-600 text-sm">{e.Album}</p>
-                      </div>
-                    </div>
-                </th>
-                <td className="px-6 py-4">
-                   {e.added}
-                </td>
-                <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
-                    {e.Release}
-                </td>
-                <td className="px-6 py-4">
-                    {e.id}
-                </td>
-            </tr>
-            </tbody>
-        </tr>
-      })
-    }
+            <tbody>{listItems}</tbody>
     </table>
+  </div>
+  
+  <div>
   </div>
         </div>
     </div>
