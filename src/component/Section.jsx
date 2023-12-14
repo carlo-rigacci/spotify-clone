@@ -1,3 +1,3 @@
 export default function Section({ sectionName }) {
-  return <></>;
+  return <div></div>;
 }
