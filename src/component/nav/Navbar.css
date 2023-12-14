@@ -8,7 +8,9 @@ nav {
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 40px;
+    height: 50px;
+    padding: 0 50px;
+    background-color: black;
     
 }
 
@@ -19,22 +21,36 @@ nav {
 }
 
 .btn1 {
-    font-size: 15px;    
-    margin: 20px;
+    font-size: 15px;  
+    font-weight: bold;  
+    padding:0 20px;
+    color: grey;
+
+}
+
+.btn1:hover {      
+    color: white;
+    transform: scale(1.1);
 
 }
 
 .btn2 {
     font-size: 15px;
-    width: 70px;
-    border: 1px solid black ;
+    font-weight: bold; 
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    border: 1px solid white ;
     border-radius: 20px;
+    color: black;
     
-    
+   
 
 }
 
 .btn2:hover {
-    font-size: 17px;
-    width: 90px;
+    font-size: 16px;
+    transform: scale(1.1);
+    transition: all 0.5s;
+    
 }

@@ -1,4 +1,8 @@
 import './Footer.css'
+import { FaInstagramSquare } from "react-icons/fa";
+import { FaSquareTwitter } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
+
 
 export default function Footer (){
     return (
@@ -26,13 +30,24 @@ export default function Footer (){
                         <p><a>Free Mobile App</a></p>
                         <p><a>Consumer rights</a></p>                                          
                     </div>
-            
+
+
+                    <div className='socialmedia'>
+                        <button className='btninst'><FaInstagramSquare /></button>
+                        <button className='btntwitter'><FaSquareTwitter /></button>
+                        <button className='btnface'><FaFacebookSquare /></button>
+                    </div>
+
+
+                   
                 </div>
-                        
-               
-                    <div className='copyright'>© 2023 Copyright: Spotify-Clone</div>
+                  
+                <div className='copyright'>© 2023 Copyright: Spotify-Clone</div>           
+                
 
             </footer>
+
+            
         </div>
     );
 }
