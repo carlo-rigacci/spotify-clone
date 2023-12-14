@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Wrapper from './component/common/Wrapper';
 
 function App() {
   return (
@@ -9,6 +10,9 @@ function App() {
           <Route></Route>
         </Routes>
       </Router>
+      <Wrapper>
+        <p>ciao</p>
+        </Wrapper>
     </>
   );
 }
