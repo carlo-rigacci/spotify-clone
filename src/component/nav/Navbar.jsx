@@ -1,7 +1,17 @@
-export default function Navbar () {
-    return     
-    <>
-    <h1>Ciao</h1>
-    </> 
-    
+
+import './Navbar.css'
+
+
+export default Navbar
+
+function Navbar () {
+    return (           
+    <nav>
+
+       <button className=''>Sign Up</button>
+       <button>Log In</button>
+       
+   
+    </nav>
+    );
 }
