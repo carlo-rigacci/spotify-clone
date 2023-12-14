@@ -26,6 +26,7 @@ export default function Playlist() {
       title : "Act Naturally",
       artist : "jk rowline",
       Album : "none",
+      image : {playImage}, 
       Release : "december",
       added : "gennio",
       instock : true
@@ -91,18 +92,20 @@ export default function Playlist() {
   return (
     <div className="bg-gradient-to-r from-violet-800 to-black">
         <div className="flex-col">
-          
-          <img className=" bg-center w-4/5 h-40" src={playImage} />
+          <div  className="bg-[url(https://wallpapers.com/images/featured/guitar-vtvn8855v2zafbtj.jpg)] bg-center w-4/5">
+            <div className="flex p-2 gap-4 text-white  ">  <button className="rounded-[50%] bg-black p-1"> pre</button> 
+            <button className="rounded-[50%] bg-black p-1"> next</button> </div>
+            <p className="text-sm">playlist</p>
+            <h1 className="text-3xl text-white p-2 ml-4">RARAR Podcasters Italia </h1>
+            <p className="text-sm text-white p-2 ml-1">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, eaque voluptates numquam perferendis </p>
+            <div className="flex">
+            <button type="button" className="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-3xl text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Play</button> <img className="h-[34px] ml-4 hover:blur-sm" src= {heart}/>
+                <p className="text-lg ml-5 text-white hover:cursor-pointer">...</p>
+            </div>
+          </div>
         <div className="flex">
           <table  className="w-4/5 text-sm text-left rtl:text-right text-gray-500  dark:text-gray-400">
-            <thead>
-              <tr className="flex justify-between ">
-                <td className="flex">
-                <button type="button" class="text-white bg-green-600 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-3xl text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Play</button> <img className="h-[34px] ml-4 hover:blur-sm" src= {heart}/>
-                <p className="text-lg ml-5 text-white hover:cursor-pointer">...</p>
-                </td>
-              </tr>
-            </thead>
+            
           <thead className=" text-xs text-gray-700 uppercase dark:text-gray-400">
             <tr className="text-white">
                 <th scope="col" className="px-6 py-3  dark:bg-gray-800">
@@ -124,7 +127,7 @@ export default function Playlist() {
                 <th scope="row" className="px-3 py-1 font-medium ">
                     
                     <div className="flex">
-                    <img className="mr-6 w-[60px] h-[60px]" src="https://placekitten.com/g/200/200"/>
+                    <img className="mr-6 w-[60px] h-[60px]" src={playImage}/>
                       <div className="flex-col text-white">
                       <p className="text-white mb-2 text-lg">Hipes dont lie</p>
                       <p className="text-white text-sm">With J. Cole, Quavo, Ty Dollar </p>
