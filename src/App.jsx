@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Wrapper from './component/common/Wrapper';
+import Wrapper from './component/common/wrapper/Wrapper';
 
 function App() {
   return (
