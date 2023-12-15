@@ -1,0 +1,224 @@
+{
+  "generi": [
+    {
+      "titolo": "Rock",
+      "img": "https://source.unsplash.com/800x600/?rock-music",
+      "background": "https://via.placeholder.com/800x600/FF5733/FFC300?text="
+    },
+    {
+      "titolo": "Pop",
+      "img": "https://source.unsplash.com/800x600/?pop-music",
+      "background": "https://via.placeholder.com/800x600/900C3F/C70039?text="
+    },
+    {
+      "titolo": "Hip Hop",
+      "img": "https://source.unsplash.com/800x600/?hiphop-music",
+      "background": "https://via.placeholder.com/800x600/2C3E50/3498DB?text="
+    },
+    {
+      "titolo": "Jazz",
+      "img": "https://source.unsplash.com/800x600/?jazz-music",
+      "background": "https://via.placeholder.com/800x600/8E44AD/9B59B6?text="
+    },
+    {
+      "titolo": "Classica",
+      "img": "https://source.unsplash.com/800x600/?classical-music",
+      "background": "https://via.placeholder.com/800x600/1ABC9C/16A085?text="
+    },
+    {
+      "titolo": "Country",
+      "img": "https://source.unsplash.com/800x600/?country-music",
+      "background": "https://via.placeholder.com/800x600/F39C12/F4D03F?text="
+    },
+    {
+      "titolo": "Blues",
+      "img": "https://source.unsplash.com/800x600/?blues-music",
+      "background": "https://via.placeholder.com/800x600/3498DB/5DADE2?text="
+    },
+    {
+      "titolo": "Elettronica",
+      "img": "https://source.unsplash.com/800x600/?electronic-music",
+      "background": "https://via.placeholder.com/800x600/2ECC71/58D68D?text="
+    },
+    {
+      "titolo": "R&B",
+      "img": "https://source.unsplash.com/800x600/?rnb-music",
+      "background": "https://via.placeholder.com/800x600/ECF0F1/BDC3C7?text="
+    },
+    {
+      "titolo": "Metal",
+      "img": "https://source.unsplash.com/800x600/?metal-music",
+      "background": "https://via.placeholder.com/800x600/7F8C8D/95A5A6?text="
+    },
+    {
+      "titolo": "Indie",
+      "img": "https://source.unsplash.com/800x600/?indie-music",
+      "background": "https://via.placeholder.com/800x600/446CB3/7FB3D5?text="
+    },
+    {
+      "titolo": "Folk",
+      "img": "https://source.unsplash.com/800x600/?folk-music",
+      "background": "https://via.placeholder.com/800x600/2E4053/566573?text="
+    },
+    {
+      "titolo": "Reggae",
+      "img": "https://source.unsplash.com/800x600/?reggae-music",
+      "background": "https://via.placeholder.com/800x600/4CAF50/8BC34A?text="
+    },
+    {
+      "titolo": "Soul",
+      "img": "https://source.unsplash.com/800x600/?soul-music",
+      "background": "https://via.placeholder.com/800x600/7D3C98/9B59B6?text="
+    },
+    {
+      "titolo": "Funk",
+      "img": "https://source.unsplash.com/800x600/?funk-music",
+      "background": "https://via.placeholder.com/800x600/D35400/E74C3C?text="
+    },
+    {
+      "titolo": "Punk",
+      "img": "https://source.unsplash.com/800x600/?punk-music",
+      "background": "https://via.placeholder.com/800x600/A569BD/C39BD3?text="
+    },
+    {
+      "titolo": "Alternative",
+      "img": "https://source.unsplash.com/800x600/?alternative-music",
+      "background": "https://via.placeholder.com/800x600/8E44AD/E74C3C?text="
+    },
+    {
+      "titolo": "Rap",
+      "img": "https://source.unsplash.com/800x600/?rap-music",
+      "background": "https://via.placeholder.com/800x600/3498DB/2E86C1?text="
+    },
+    {
+      "titolo": "Dance",
+      "img": "https://source.unsplash.com/800x600/?dance-music",
+      "background": "https://via.placeholder.com/800x600/E74C3C/ECF0F1?text="
+    },
+    {
+      "titolo": "World",
+      "img": "https://source.unsplash.com/800x600/?world-music",
+      "background": "https://via.placeholder.com/800x600/F39C12/F4D03F?text="
+    },
+    {
+      "titolo": "Techno",
+      "img": "https://source.unsplash.com/800x600/?techno-music",
+      "background": "https://via.placeholder.com/800x600/2C3E50/3498DB?text="
+    },
+    {
+      "titolo": "Gospel",
+      "img": "https://source.unsplash.com/800x600/?gospel-music",
+      "background": "https://via.placeholder.com/800x600/1ABC9C/16A085?text="
+    },
+    {
+      "titolo": "Disco",
+      "img": "https://source.unsplash.com/800x600/?disco-music",
+      "background": "https://via.placeholder.com/800x600/ECF0F1/BDC3C7?text="
+    },
+    {
+      "titolo": "Ambient",
+      "img": "https://source.unsplash.com/800x600/?ambient-music",
+      "background": "https://via.placeholder.com/800x600/2ECC71/58D68D?text="
+    },
+    {
+      "titolo": "Chillout",
+      "img": "https://source.unsplash.com/800x600/?chillout-music",
+      "background": "https://via.placeholder.com/800x600/F39C12/F4D03F?text="
+    },
+    {
+      "titolo": "Ska",
+      "img": "https://source.unsplash.com/800x600/?ska-music",
+      "background": "https://via.placeholder.com/800x600/7F8C8D/95A5A6?text="
+    },
+    {
+      "titolo": "Latin",
+      "img": "https://source.unsplash.com/800x600/?latin-music",
+      "background": "https://via.placeholder.com/800x600/4CAF50/8BC34A?text="
+    },
+    {
+      "titolo": "Trance",
+      "img": "https://source.unsplash.com/800x600/?trance-music",
+      "background": "https://via.placeholder.com/800x600/27AE60/2ECC71?text="
+    },
+    {
+      "titolo": "Bluegrass",
+      "img": "https://source.unsplash.com/800x600/?bluegrass-music",
+      "background": "https://via.placeholder.com/800x600/446CB3/7FB3D5?text="
+    },
+    {
+      "titolo": "Swing",
+      "img": "https://source.unsplash.com/800x600/?swing-music",
+      "background": "https://via.placeholder.com/800x600/D35400/E74C3C?text="
+    },
+    {
+      "titolo": "Opera",
+      "img": "https://source.unsplash.com/800x600/?opera-music",
+      "background": "https://via.placeholder.com/800x600/8E44AD/9B59B6?text="
+    },
+    {
+      "titolo": "Acustico",
+      "img": "https://source.unsplash.com/800x600/?acoustic-music",
+      "background": "https://via.placeholder.com/800x600/1ABC9C/16A085?text="
+    },
+    {
+      "titolo": "Hard Rock",
+      "img": "https://source.unsplash.com/800x600/?hardrock-music",
+      "background": "https://via.placeholder.com/800x600/7D3C98/9B59B6?text="
+    },
+    {
+      "titolo": "New Wave",
+      "img": "https://source.unsplash.com/800x600/?newwave-music",
+      "background": "https://via.placeholder.com/800x600/E74C3C/ECF0F1?text="
+    },
+    {
+      "titolo": "Grime",
+      "img": "https://source.unsplash.com/800x600/?grime-music",
+      "background": "https://via.placeholder.com/800x600/3498DB/2E86C1?text="
+    },
+    {
+      "titolo": "Trap",
+      "img": "https://source.unsplash.com/800x600/?trap-music",
+      "background": "https://via.placeholder.com/800x600/F39C12/F4D03F?text="
+    },
+    {
+      "titolo": "Samba",
+      "img": "https://source.unsplash.com/800x600/?samba-music",
+      "background": "https://via.placeholder.com/800x600/ECF0F1/BDC3C7?text="
+    },
+    {
+      "titolo": "Dubstep",
+      "img": "https://source.unsplash.com/800x600/?dubstep-music",
+      "background": "https://via.placeholder.com/800x600/2C3E50/3498DB?text="
+    },
+    {
+      "titolo": "Garage",
+      "img": "https://source.unsplash.com/800x600/?garage-music",
+      "background": "https://via.placeholder.com/800x600/2ECC71/58D68D?text="
+    },
+    {
+      "titolo": "Psychedelic",
+      "img": "https://source.unsplash.com/800x600/?psychedelic-music",
+      "background": "https://via.placeholder.com/800x600/D35400/E74C3C?text="
+    },
+    {
+      "titolo": "Rockabilly",
+      "img": "https://source.unsplash.com/800x600/?rockabilly-music",
+      "background": "https://via.placeholder.com/800x600/1ABC9C/16A085?text="
+    },
+    {
+      "titolo": "Surf",
+      "img": "https://source.unsplash.com/800x600/?surf-music",
+      "background": "https://via.placeholder.com/800x600/3498DB/2E86C1?text="
+    },
+    {
+      "titolo": "Industrial",
+      "img": "https://source.unsplash.com/800x600/?industrial-music",
+      "background": "https://via.placeholder.com/800x600/8E44AD/9B59B6?text="
+    },
+    {
+      "titolo": "Reggaeton",
+      "img": "https://source.unsplash.com/800x600/?reggaeton-music",
+      "background": "https://via.placeholder.com/800x600/2C3E50/3498DB?text="
+    }
+  ]
+}
