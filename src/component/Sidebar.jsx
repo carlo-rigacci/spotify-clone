@@ -1,4 +1,5 @@
 import Wrapper from "./common/Wrapper.jsx";
+import SvgSwitcher from "./SvgSwitcher.jsx";
 
 export default function Sidebar() {
   return (
@@ -30,7 +31,7 @@ export default function Sidebar() {
               href=""
               className=" text-[#b8b8b8] hover:text-[#f5f5f5] focus:text-[#fff] transition-all"
             >
-              <i className=" fa-solid fa-search mr-3 text-[20px]"></i> Search
+              <SvgSwitcher /> Search
             </a>
           </div>
         </div>

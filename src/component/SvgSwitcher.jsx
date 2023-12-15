@@ -3,15 +3,15 @@ import SvgPrimo from './SvgPrimo';
 import SvgSecondo from './SvgSecondo';
 
 const SvgSwitcher = () => {
-  const [showSvgPrimo, setShowSvgPrimo] = useState(true);
+  const [mostraSvgPrimo, setMostraSvgPrimo] = useState(true);
 
   const ilCambio = () => {
-    setShowSvgPrimo(!showSvgPrimo);
+    setMostraSvgPrimo(!mostraSvgPrimo);
   };
 
   return (
-    <div className='bg-slate-600 h-screen'>
-      {showSvgPrimo ? (
+    <div>
+      {mostraSvgPrimo ? (
         <SvgPrimo onClick={ilCambio} />
       ) : (
         <SvgSecondo onClick={ilCambio} />
