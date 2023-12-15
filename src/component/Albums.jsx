@@ -17,13 +17,14 @@ export default function Albums() {
   return (
     <div>
         <div  className="flex flex-wrap bg-gray-600">
-          
+          <Link to="/playlist">
         {
             albumData.map((data)=>{
                 return <div> <Container title ={data.title} description = {data.title} />
                 </div>
             })
         }
+        </Link>
         </div>
     </div>
   )
