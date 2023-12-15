@@ -9,9 +9,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route>
-          <Route path="/playlist" element={<Playlist/>} />
-          </Route>
+          <Route path='/Container' element = {<Container />}></Route>
+          <Route path='/playlist' element = {<Playlist />}></Route>
+          <Route path='/albums' element = {<Albums />}></Route>
         </Routes>
       </Router>
       <Albums/>
