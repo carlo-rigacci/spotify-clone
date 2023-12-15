@@ -46,7 +46,7 @@ export default function Footer (){
                 {/* copyright /autori*/}
                   
                 <div className='copyright'>© 2023 Copyright: Spotify-Clone </div>
-                <div className='copyright'>Carlomario Silva Toro - Dheyne Ghisolfi - Enrico Garozzo - Giacomo Giraldi - Toukir Islam Shovo - Valdmir Topchin</div>           
+                <div className='copyright'>Carlomario Silva Toro - Dheyne Ghisolfi - Enrico Garozzo - Giacomo Giraldi - Toukir Islam Shovo - Vladimir Topchin</div>           
                 
 
             </footer>
