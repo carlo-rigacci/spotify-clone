@@ -1,4 +1,6 @@
 import './Footer.css'
+
+//import icons from react per social media
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaSquareTwitter } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
@@ -30,17 +32,18 @@ export default function Footer (){
                         <p><a>Free Mobile App</a></p>
                         <p><a>Consumer rights</a></p>                                          
                     </div>
-
+                    
+                    {/* pulsanti social media*/}
 
                     <div className='socialmedia'>
                         <button className='btninst'><FaInstagramSquare /></button>
                         <button className='btntwitter'><FaSquareTwitter /></button>
                         <button className='btnface'><FaFacebookSquare /></button>
                     </div>
-
-
                    
                 </div>
+
+                {/* copyright /autori*/}
                   
                 <div className='copyright'>© 2023 Copyright: Spotify-Clone </div>
                 <div className='copyright'>Carlomario Silva Toro - Dheyne Ghisolfi - Enrico Garozzo - Giacomo Giraldi - Toukir Islam Shovo - Valdmir Topchin</div>           
