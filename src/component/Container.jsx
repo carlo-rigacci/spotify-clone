@@ -1,26 +1,8 @@
 import { useState } from 'react';
-export default function Container() {
+export default function Container(props) {
     
     const [isHovered, setIsHovered] = useState(false);
-    const playListTitles = [
-        {
-          id:1 ,
-          title : "Acadian Driftwood",
-          description : " a mixed song to hear"
-        },{
-            id:1 ,
-            title : "Acadian Driftwood",
-            description : " a mixed song to hear"
-          },{
-            id:1 ,
-            title : "Acadian Driftwood",
-            description : " a mixed song to hear"
-          },{
-            id:1 ,
-            title : "Acadian Driftwood",
-            description : " a mixed song to hear"
-          },
-    ]
+    
         const handleMouseOver = () => {
             setIsHovered(true);
           };
@@ -28,9 +10,9 @@ export default function Container() {
           const handleMouseOut = () => {
             setIsHovered(false);
           };
-          
   return (
-    <div className="flex w-[250px] rounded-lg bg-gray-700 px-2 py-2 hover:bg-gray-500" onMouseOver={handleMouseOver}
+    <div className='flex'>
+      <div  className="flex w-[250px] rounded-lg bg-gray-700 px-2 py-2 hover:bg-gray-500" onMouseOver={handleMouseOver}
     onMouseOut={handleMouseOut}
     style={{ position: 'relative', display: 'inline-block' }}>
     <div className="max-w-sm rounded overflow-hidden shadow-lg flex-col justify-center items-center">
@@ -43,12 +25,13 @@ export default function Container() {
         </button>
       )}
         <div className="px-3 py-2">
-            <div className="font-bold text-white text-lg mb-2">The Coldest Sunset</div>
+            <div className="font-bold text-white text-lg mb-2">{props.title}</div>
             <p className="text-white text-[13px]">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla!
+                {props.description}
             </p>
         </div>
       
+    </div>
     </div>
 </div>
   )
