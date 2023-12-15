@@ -12,12 +12,32 @@ nav {
     height: 50px;
     padding: 0 50px;
     background-color: black;
-    
+        
 }
 
 .wrapper{
     margin: 0 auto;
-     max-width: 1420px;
+    max-width: 1420px;
+
+}
+
+.barSearch{
+    flex-direction: column;
+}
+
+.search {
+    background-color: rgb(67, 67, 67); 
+    border-radius: 20px;
+     color: grey;
+     height: 30px;
+     padding: 20px;   
+     caret-color: white
+
+}
+
+.search:hover {
+    
+    border: 1px solid white;
 
 }
 
