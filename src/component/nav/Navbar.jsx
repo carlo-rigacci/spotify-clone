@@ -10,7 +10,7 @@ export default Navbar
 
 function Navbar () {
     return (           
-    <nav className='Wrapper'>
+    <nav className='Wrapper flex justify-between items-center'>
 
         {/*pulsanti frecce */}       
             <div className= 'row'>

@@ -15,7 +15,7 @@ export default function Albums() {
   }, []);
   return (
     <div>
-      <div className='flex flex-wrap bg-gray-600'>
+      <div className='flex flex-wrap bg-black'>
         {albumData.map((data, index) => {
           return (
             <Link key={index} to={'/playlist'}>
