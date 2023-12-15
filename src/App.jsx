@@ -1,24 +1,18 @@
 import './App.css';
+import Sidebar from "./component/Sidebar.jsx";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './component/nav/Navbar';
-import Footer from './component/footer/Footer';
 
-
-export default function App() {
+function App() {
   return (
     <>
       <Router>
-        <Navbar/>             
-          <Routes>
-            <Route/>
-                  
-          </Routes>
+        <Sidebar />
+        <Routes>
+          <Route></Route>
+        </Routes>
       </Router>
-
-      <Footer/>
     </>
   );
 }
 
-
-
+export default App;
