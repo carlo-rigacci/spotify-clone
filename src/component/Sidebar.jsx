@@ -29,20 +29,20 @@ export default function Sidebar() {
           </div>
         </div>
         <Wrapper>
-          <div className=" flex flex-col items-center fill-[#b8b8b8] text-[#b8b8b8]  pt-5 ml-2 mr-2 mb-2">
+          <div className=" flex flex-col items-center fill-[#b8b8b8] text-[#b8b8b8] transition-all pt-5 ml-2 mr-2 mb-2">
             <div className=" flex items-center hover:fill-white hover:text-white">
               <button className=" flex flex-row gap-3">
                 <span>
-                  <svg viewBox="0 0 24 24" className=" w-[20px] mx-3 ">
+                  <svg viewBox="0 0 24 24" className=" w-[20px] ml-3 ">
                     <path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path>
                   </svg>
                 </span>
                 Your Library
               </button>
               <button className=" flex flex-row gap-3 w-[20px] ml-[100px]">
-                <span className="bg">
+                <span className=" hover:bg-[#222222] hover:rounded-l">
                   <svg className=" w-[20px] h-[20px]">
-                    <path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75"></path>
+                    <path className="" d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75"></path>
                   </svg>
                 </span>
               </button>

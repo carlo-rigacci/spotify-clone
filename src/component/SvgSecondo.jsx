@@ -4,7 +4,7 @@ const SvgSecondo = ({ onClick }) => {
   return (
     <span className=" flex flex-row border-none text-[#b8b8b8] hover:text-[#f5f5f5] focus:text-[#fff] transition-all">
       <svg
-        className=""
+        className=" outline-none"
         onClick={onClick}
         role="button"
         tabIndex="0"
