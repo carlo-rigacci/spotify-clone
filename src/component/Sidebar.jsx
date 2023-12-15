@@ -3,8 +3,8 @@ import SvgSwitcher from "./SvgSwitcher.jsx";
 
 export default function Sidebar() {
   return (
-    <nav className=" bg-black flex flex-col h-screen">
-      <div className=" flex flex-col w-[300px] h-full">
+    <nav className=" bg-black flex flex-col">
+      <div className="  flex flex-col w-[300px] h-sceen">
         <div className=" bg-[#121212] flex flex-col m-2 rounded-md gap-3">
           <div
             className=" pl-4 pt-5
@@ -29,26 +29,26 @@ export default function Sidebar() {
           </div>
         </div>
         <Wrapper>
-          <div className=" flex flex-col items-center h-full fill-[#b8b8b8] text-[#b8b8b8] pt-5 ml-2 mr-2 mb-2">
-            <div className=" flex items-center">
+          <div className=" flex flex-col items-center fill-[#b8b8b8] text-[#b8b8b8]  pt-5 ml-2 mr-2 mb-2">
+            <div className=" flex items-center hover:fill-white hover:text-white">
               <button className=" flex flex-row gap-3">
                 <span>
-                  <svg viewBox="0 0 24 24" className=" w-[20px] mx-3">
+                  <svg viewBox="0 0 24 24" className=" w-[20px] mx-3 ">
                     <path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path>
                   </svg>
                 </span>
                 Your Library
               </button>
               <button className=" flex flex-row gap-3 w-[20px] ml-[100px]">
-                <span className="">
+                <span className="bg">
                   <svg className=" w-[20px] h-[20px]">
                     <path d="M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75"></path>
                   </svg>
                 </span>
               </button>
             </div>
-            <div className=" flex flex-col items-center justify-center absolute  bottom-[0px]">
-              <footer className=" flex flex-col items-center justify-center align-bottom bg-[#121212] p-2 w-[280px]">
+            <div className=" flex flex-col items-center justify-center absolute  bottom-[40px]">
+              <footer className=" flex flex-col items-center bg-[#121212] p-2 w-[280px]">
                 <div className=" grid grid-cols-2 gap-2 text-xs">
                   <a href="">Legal information</a>
                   <a href="">Privacy Center</a>
@@ -60,7 +60,7 @@ export default function Sidebar() {
                 </div>
 
                 <div className="">
-                  <button className=" m-4 justify-center items-center border-2 focus:text-[#fff]  focus:border-[#fff] focus:scale-110  p-1 px-3 rounded-2xl text-sm  flex gap-2 hover:text-[#fff] hover:border-[#fff] hover:scale-110">
+                  <button className=" mx-4 mt-4 justify-center items-center border-2 focus:text-[#fff]  focus:border-[#fff] focus:scale-110  p-1 px-3 rounded-2xl text-sm  flex gap-2 hover:text-[#fff] hover:border-[#fff] hover:scale-110">
                     <span>
                       {/* 
                         L'attributo viewBox definisce la posizione e la dimensione, nello spazio utente, di una finestra SVG.
