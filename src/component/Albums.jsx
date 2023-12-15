@@ -14,7 +14,7 @@ export default function Albums() {
         getdata();
     },[])
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap bg-gray-600">
         {
             albumData.map((data)=>{
                 return <div> <Container title ={data.title} description = {data.title} />
