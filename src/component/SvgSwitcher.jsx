@@ -12,8 +12,8 @@ const SvgSwitcher = () => {
   return (
     <div>
       {mostraSvgPrimo ? (
-        <SvgPrimo onClick={ilCambio} />
-      ) : (
+        <SvgPrimo onClick={ilCambio} /> 
+      )  : (
         <SvgSecondo onClick={ilCambio} />
       )}
     </div>

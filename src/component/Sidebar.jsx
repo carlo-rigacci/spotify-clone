@@ -23,13 +23,8 @@ export default function Sidebar() {
             >
               <i className=" fa-solid fa-house mr-3 text-[20px]"></i> Home
             </a>
-            <div className=" flex flex-row">
-              <a
-                href=""
-                className=" text-[#b8b8b8] hover:text-[#f5f5f5] focus:text-[#fff] transition-all"
-              >
-                <SvgSwitcher /> Search
-              </a>
+            <div className="">
+              <SvgSwitcher /> 
             </div>
           </div>
         </div>
