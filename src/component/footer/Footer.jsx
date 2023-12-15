@@ -42,7 +42,8 @@ export default function Footer (){
                    
                 </div>
                   
-                <div className='copyright'>© 2023 Copyright: Spotify-Clone</div>           
+                <div className='copyright'>© 2023 Copyright: Spotify-Clone </div>
+                <div className='copyright'>Carlomario Silva Toro - Dheyne Ghisolfi - Enrico Garozzo - Giacomo Giraldi - Toukir Islam Shovo - Valdmir Topchin</div>           
                 
 
             </footer>
