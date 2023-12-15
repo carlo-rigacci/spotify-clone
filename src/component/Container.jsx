@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import Playlist from './Playlist';
 export default function Container(props) {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -27,9 +26,6 @@ export default function Container(props) {
           />
           {isHovered && (
             <button
-              onClick={() => {
-                <Playlist />;
-              }}
               className=' even:none text-white bg-green-600 float-right  focus:ring-green-300 font-medium rounded-3xl text-sm px-5 py-2.5 me-2 mb-2  '
             >
               <i class='fa-solid fa-play'></i>

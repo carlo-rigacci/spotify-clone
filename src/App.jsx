@@ -6,6 +6,8 @@ import Sidebar from './component/Sidebar';
 import Search from './component/Search';
 import Playlist from './component/Playlist';
 import Albums from './component/Albums';
+import Section from './component/Section';
+import SectionContainer from './component/SectionContainer';
 
 function App() {
   return (
@@ -13,9 +15,13 @@ function App() {
     <div className='bg-black' >
       <Router>
         <div className='flex justify-between '>
-          <div className=" "><Sidebar /></div>
-        <div className='mt-2'><Navbar/>
-        <Albums/>
+          <div className=" w-[300px]"><Sidebar /></div>
+        <div className='w-[100%]'><Navbar/>
+        <div className='flex-col justify-start'>
+        <Section/>
+        <Section/>
+        <Section/>
+        </div>
         </div>
         
         </div>
@@ -26,6 +32,7 @@ function App() {
           <Route path='/albums' element={<Albums />}></Route>
           <Route path='/search' element={<Search />}></Route>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

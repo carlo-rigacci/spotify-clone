@@ -7,7 +7,11 @@ export default function Section({ sectionName }) {
     <div className=" h-fit p-4 text-white " style={{ backgroundColor: "rgba(18,18,18,0.7)" }}>
       <h1 className="font-bold text-2xl p-3">Section name</h1>
       <div className=" flex grid-cols-4 gap-6">
-        <Container> <Link to={""}></Link></Container>
+        <Container/>
+        <Container />
+        <Container />
+        <Container />
+        <Container />
         <Container />
         <Container />
         <Container />
