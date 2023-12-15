@@ -12,7 +12,6 @@ export default function Sidebar() {
             <a href="" target="_blank" className="text-white">
               <svg
                 className=" fill-[#f5f5f5]"
-                role="img"
                 viewBox="0 0 78 24"
                 height="24"
               >
@@ -23,13 +22,13 @@ export default function Sidebar() {
           <div className=" flex flex-col gap-3 pl-4 pb-4">
             <a
               href=""
-              className="text-[#b8b8b8] hover:text-[#f5f5f5] transition-all"
+              className="text-[#b8b8b8] hover:text-[#f5f5f5] focus:text-[#fff] transition-all"
             >
               <i className=" fa-solid fa-house mr-3 text-[20px]"></i> Home
             </a>
             <a
               href=""
-              className=" text-[#b8b8b8] hover:text-[#f5f5f5] transition-all"
+              className=" text-[#b8b8b8] hover:text-[#f5f5f5] focus:text-[#fff] transition-all"
             >
               <i className=" fa-solid fa-search mr-3 text-[20px]"></i> Search
             </a>
@@ -54,8 +53,8 @@ export default function Sidebar() {
                 </span>
               </button>
             </div>
-            <div className=" flex flex-col absolute bottom-[50px]">
-              <footer className=" flex flex-col align-bottom">
+            <div className=" flex flex-col items-center justify-center absolute  bottom-[0px]">
+              <footer className=" flex flex-col items-center justify-center align-bottom bg-[#121212] p-2 w-[280px]">
                 <div className=" grid grid-cols-2 gap-2 text-xs">
                   <a href="">Legal information</a>
                   <a href="">Privacy Center</a>
@@ -65,9 +64,16 @@ export default function Sidebar() {
                   <a href="">Accessibility</a>
                   <a href="">Cookie Policy</a>
                 </div>
-                <div className=" ">
-                  <button className=" m-4 justify-center items-center border-2 p-1 px-3 rounded-2xl text-sm  flex gap-2 hover:text-[#fff] hover:border-[#fff] hover:scale-110">
+
+                <div className="">
+                  <button className=" m-4 justify-center items-center border-2 focus:text-[#fff]  focus:border-[#fff] focus:scale-110  p-1 px-3 rounded-2xl text-sm  flex gap-2 hover:text-[#fff] hover:border-[#fff] hover:scale-110">
                     <span>
+                      {/* 
+                        L'attributo viewBox definisce la posizione e la dimensione, nello spazio utente, di una finestra SVG.
+                        I numeri min-x e min-y rappresentano le coordinate in alto a sinistra della finestra. La larghezza e l'altezza dei numeri rappresentano le sue dimensioni. 
+                        Questi numeri, che sono separati da spazi bianchi e/o una virgola, specificano un rettangolo nello spazio utente che viene mappato ai limiti della finestra stabilita per l'elemento SVG associato (non la finestra del browser).
+
+                      */}
                       <svg className=" w-[16px]" viewBox="0 0 16 16">
                         <path d="M8.152 16H8a8 8 0 1 1 .152 0zm-.41-14.202c-.226.273-.463.713-.677 1.323-.369 1.055-.626 2.496-.687 4.129h3.547c-.06-1.633-.318-3.074-.687-4.129-.213-.61-.45-1.05-.676-1.323-.194-.235-.326-.285-.385-.296h-.044c-.055.007-.19.052-.391.296zM4.877 7.25c.062-1.771.34-3.386.773-4.624.099-.284.208-.554.329-.806a6.507 6.507 0 0 0-4.436 5.43h3.334zm-3.334 1.5a6.507 6.507 0 0 0 4.436 5.43 7.974 7.974 0 0 1-.33-.806c-.433-1.238-.71-2.853-.772-4.624H1.543zm4.835 0c.061 1.633.318 3.074.687 4.129.214.61.451 1.05.677 1.323.202.244.336.29.391.297l.044-.001c.06-.01.19-.061.385-.296.226-.273.463-.713.676-1.323.37-1.055.626-2.496.687-4.129H6.378zm5.048 0c-.061 1.771-.339 3.386-.772 4.624-.082.235-.171.46-.268.674a6.506 6.506 0 0 0 4.071-5.298h-3.03zm3.031-1.5a6.507 6.507 0 0 0-4.071-5.298c.097.214.186.44.268.674.433 1.238.711 2.853.772 4.624h3.031z"></path>
                       </svg>
