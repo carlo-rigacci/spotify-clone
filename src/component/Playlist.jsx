@@ -14,7 +14,7 @@ export default function Playlist() {
       added : "december",
       instock : true
     }, {
-      id: 1, 
+      id: 2, 
       title : "Ac-Cent-Tchu-Ate The Positive",
       artist : "arijit sing ",
       Album : "none",
@@ -22,7 +22,7 @@ export default function Playlist() {
       added : "december",
       instock : true
     }, {
-      id: 1, 
+      id: 3, 
       title : "Act Naturally",
       artist : "jk rowline",
       Album : "none",
@@ -31,7 +31,7 @@ export default function Playlist() {
       added : "gennio",
       instock : true
     },{
-      id: 1, 
+      id: 4, 
       title : "After Hours",
       artist : "jk rowline",
       Album : "none",
@@ -39,7 +39,7 @@ export default function Playlist() {
       added : "december",
       instock : true
     }, {
-      id: 1, 
+      id: 5, 
       title : "Aftermath",
       artist : "arijit sing ",
       Album : "none",
@@ -47,7 +47,7 @@ export default function Playlist() {
       added : "december",
       instock : true
     },{
-      id: 1, 
+      id: 6, 
       title : "Ain't That Just Like A Woman",
       artist : "jk rowline",
       Album : "none",
@@ -55,7 +55,7 @@ export default function Playlist() {
       added : "december",
       instock : true
     }, {
-      id: 1, 
+      id: 7, 
       title : "Albert Flasher",
       artist : "arijit sing ",
       Album : "none",
