@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction:column;     
+     border: 1px solid rgb(23, 18, 18);
+     background-color: black;
+          
+
+}
+
+.menu {
+     display: flex;     
+     padding: 10px;
+
+}
+
+.submenu {
+    padding: 50px;
+        
+}
+
+.submenu h1 {
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.submenu p {
+    font-size: 11px;
+    cursor: pointer;
+    color: grey;
+}
+
+p:hover{
+    color: white;
+    text-decoration: underline;
+    
+}
+
+
+.socialmedia {
+    display: flex;
+    justify-content:center;
+    align-items:first baseline;
+    padding: 50px; 
+    color: white;
+    
+   
+}
+
+.btninst:hover {
+    color: grey;
+    transform: scale(1.1);
+    transition: all 0.5s;
+  
+    
+}
+
+.btntwitter:hover {
+    color: grey;
+    transform: scale(1.1);
+    transition: all 0.5s;
+    
+    
+    
+}
+
+.btnface:hover {
+    color: grey;
+    transform: scale(1.1);
+    transition: all 0.5s;
+    
+    
+}
+
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;   
+    color: grey; 
+
+}
+
+

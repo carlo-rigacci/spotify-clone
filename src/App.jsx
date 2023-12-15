@@ -1,22 +1,24 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Search from "./component/Search";
-import Container from "./component/Container"
+import Navbar from './component/nav/Navbar';
+import Footer from './component/footer/Footer';
 
 
-function App() {
+export default function App() {
   return (
     <>
       <Router>
-        <Routes>
-          <Route path='/Search' element = {<Search />}></Route>
-          <Route path='/Container' element = {<Container />}></Route>
-        </Routes>
+        <Navbar/>             
+          <Routes>
+            <Route/>
+                  
+          </Routes>
       </Router>
-   
-     
+
+      <Footer/>
     </>
   );
 }
 
-export default App;
+
+
