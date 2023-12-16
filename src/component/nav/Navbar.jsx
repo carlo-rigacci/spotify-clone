@@ -11,7 +11,7 @@ export default Navbar
 
 function Navbar () {
     return (           
-    <nav className='Wrapper flex justify-around items-center sticky z-[100] top-0' style={{ backgroundColor: "rgba(16,16,16,255)" }}>
+    <nav className='Wrapper flex justify-around items-center sticky z-[100] top-0 bg-black'>
 
             {/*pulsanti frecce */}       
             <div className= 'row'>

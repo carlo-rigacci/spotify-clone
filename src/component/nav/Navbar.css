@@ -13,12 +13,6 @@ nav {
     background-color: black;
 }
 
-.wrapper{
-    margin: 0 auto;
-    max-width: 1420px;
-
-}
-
 .row {
     display: flex;
     flex-direction: row;
