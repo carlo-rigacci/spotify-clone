@@ -34,7 +34,7 @@ export default function Search() {
           return (
             <Link
               key={index}
-              to={`/playlist`} 
+              to={`/playlistpage`} 
             >
               <div
                 className={` rounded-xl aspect-squarerounded-lg p-5 cursor-pointer text-3xl  overflow-hidden md:text-4xl font-semibold lg:text-3xl`}
