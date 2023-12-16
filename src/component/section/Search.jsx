@@ -32,15 +32,12 @@ export default function Search() {
         {title.map((titleName, index) => {
           const randomColor = getRandomColor();
           return (
-            <Link
-              key={index}
-              to={`/playlistpage`} 
-            >
+            <Link key={index} to={`/playlistpage`}>
               <div
-                className={` rounded-xl aspect-squarerounded-lg p-5 cursor-pointer text-2xl  overflow-hidden md:text-3xl font-semibold lg:text-3xl`}
+                className={`rounded-xl aspect-square p-3 cursor-pointer text-xl md:text-xl lg:text3xl font-semibold overflow-hidden flex flex-col items-left`}
                 style={{ backgroundColor: randomColor }}
               >
-                {titleName.titolo}
+                <p className=" self-auto">{titleName.titolo}</p>
                 <img
                   src={titleName.img}
                   alt={titleName.titolo}
