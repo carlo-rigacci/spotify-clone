@@ -6,11 +6,12 @@ const SvgSwitcher = () => {
   const [mostraSvgPrimo, setMostraSvgPrimo] = useState(true);
 
   const ilCambio = () => {
+    console.log("vedi se cambia qual cosa");
     setMostraSvgPrimo(!mostraSvgPrimo);
   };
 
   return (
-    <div>
+    <div className=' active:text-white active:fill-white'>
       {mostraSvgPrimo ? (
         <SvgPrimo onClick={ilCambio} /> 
       )  : (
