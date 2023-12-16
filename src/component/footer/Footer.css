@@ -4,19 +4,21 @@
     box-sizing: border-box;
 }
 
+
 footer {
-     display: flex;
+     display:flex;
      justify-content: center;
      align-items: center;
-     flex-direction:column;     
-     border: 1px solid rgb(23, 18, 18);
-     background-color: black;
-          
+     flex-direction:column;  
+     background-color: rgb(18, 18, 18);
+     padding-left: 300px;
+    
+    
 
 }
 
 .menu {
-     display: flex;     
+     display: flex;         
      padding: 10px;
 
 }
@@ -68,8 +70,7 @@ p:hover{
     color: grey;
     transform: scale(1.1);
     transition: all 0.5s;
-    
-    
+     
     
 }
 
@@ -83,12 +84,27 @@ p:hover{
 
 
 .copyright {
-    display: flex;
-    justify-content: center;
+    display: flex;  
     align-items: center;
     font-size: 10px;   
     color: grey; 
 
 }
 
+
+@media only screen and (max-width: 600px){
+    footer{     
+     width: 100%;
+     text-align: left;
+     margin-left: 300px;
+          
+    } 
+
+    .menu {
+        flex-direction: column
+        
+                  
+   
+    }
+};
 
