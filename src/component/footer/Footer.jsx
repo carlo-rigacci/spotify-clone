@@ -8,8 +8,9 @@ import { FaFacebookSquare } from "react-icons/fa";
 
 export default function Footer (){
     return (
-        <div>
+        
             <footer>
+                
                 <div className='menu'>
                     <div className='submenu'>
                         <h1>Company</h1>
@@ -52,7 +53,7 @@ export default function Footer (){
             </footer>
 
             
-        </div>
+        
     );
 }
    
