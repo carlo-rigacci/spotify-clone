@@ -2,7 +2,7 @@
 import "./Wrapper.css"
 export default function Wrapper(props) {
   return (
-    <div class="wrapper">
+    <div className="wrapper">
          {props.children}
     </div>
   )

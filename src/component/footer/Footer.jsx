@@ -36,9 +36,9 @@ export default function Footer (){
                     {/* pulsanti social media*/}
 
                     <div className='socialmedia'>
-                        <button className='btninst'><FaInstagramSquare /></button>
-                        <button className='btntwitter'><FaSquareTwitter /></button>
-                        <button className='btnface'><FaFacebookSquare /></button>
+                        <button className='btninst'><a href="https://www.instagram.com/spotify/ "target='_blank'><FaInstagramSquare /></a></button>
+                        <button className='btntwitter'><a href="https://twitter.com/Spotify" target='_blank'><FaSquareTwitter /></a></button>
+                        <button className='btnface'><a href="https://www.facebook.com/Spotify/"target='_blank'><FaFacebookSquare /></a></button>
                     </div>
                    
                 </div>
