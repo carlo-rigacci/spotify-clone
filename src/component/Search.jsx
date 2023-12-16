@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Link } from "react-router-dom";
-import Container from "./Container";
+import Container from "./container/Container";
 
 export default function Search() {
   const [title, setTitle] = useState([]);
@@ -34,7 +34,7 @@ export default function Search() {
           return (
             <Link
               key={index}
-              to={`/Container`} 
+              to={`/playlist`} 
             >
               <div
                 className={` rounded-xl aspect-squarerounded-lg p-5 cursor-pointer text-3xl  overflow-hidden md:text-4xl font-semibold lg:text-3xl`}

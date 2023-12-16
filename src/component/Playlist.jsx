@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
+import { Link } from "react-router-dom";
 import heart from "../assets/heart-431.svg"
-import playImage from "../assets/cai.jpg"
 
 export default function Playlist() {
 
@@ -12,7 +12,7 @@ export default function Playlist() {
       Album : "none",
       Release : "guilio",
       added : "december",
-      instock : true
+      img : "https://source.unsplash.com/300x200/?rock"
     }, {
       id: 2, 
       title : "Ac-Cent-Tchu-Ate The Positive",
@@ -20,16 +20,15 @@ export default function Playlist() {
       Album : "none",
       Release : "6 th february ",
       added : "december",
-      instock : true
+      img : "https://source.unsplash.com/300x200/?pop"
     }, {
       id: 3, 
       title : "Act Naturally",
       artist : "jk rowline",
-      Album : "none",
-      image : {playImage}, 
+      Album : "none", 
       Release : "december",
       added : "gennio",
-      instock : true
+      img: "https://source.unsplash.com/300x200/?hip-hop"
     },{
       id: 4, 
       title : "After Hours",
@@ -37,7 +36,7 @@ export default function Playlist() {
       Album : "none",
       Release : "guilio",
       added : "december",
-      instock : true
+      img: "https://source.unsplash.com/300x200/?electronic"
     }, {
       id: 5, 
       title : "Aftermath",
@@ -45,7 +44,7 @@ export default function Playlist() {
       Album : "none",
       Release : "6 th february ",
       added : "december",
-      instock : true
+      img : "https://source.unsplash.com/300x200/?jazz"
     },{
       id: 6, 
       title : "Ain't That Just Like A Woman",
@@ -53,7 +52,7 @@ export default function Playlist() {
       Album : "none",
       Release : "guilio",
       added : "december",
-      instock : true
+      img : "https://source.unsplash.com/300x200/?classical"
     }, {
       id: 7, 
       title : "Albert Flasher",
@@ -61,7 +60,7 @@ export default function Playlist() {
       Album : "none",
       Release : "6 th february ",
       added : "december",
-      instock : true
+      img : "https://source.unsplash.com/300x200/?rock"
     }, 
   ]
   const listItems = titleSong.map((song , i) =>
@@ -70,7 +69,7 @@ export default function Playlist() {
                 <th scope="row" className="px-3 py-1 font-medium ">
                     
                     <div className="flex">
-                    <img className="mr-6 w-[60px] h-[60px]" src="https://placekitten.com/g/200/200"/>
+                    <img className="mr-6 w-[60px] h-[60px]" src={song.img}/>
                       <div className="flex-col ">
                       <p className=" mb-2 text-lg text-white">{song.title}</p>
                       <p className="text-white text-sm">{song.artist} </p>
@@ -90,12 +89,18 @@ export default function Playlist() {
             
   );
   return (
-    <div className="bg-gradient-to-r from-violet-800 to-black">
+    <div className="bg-gradient-to-r from-black to-gray-900">
         <div className="flex-col">
-          <div  className="bg-[url(https://wallpapers.com/images/featured/guitar-vtvn8855v2zafbtj.jpg)] bg-center w-4/5">
-            <div className="flex p-2 gap-4 text-white  ">  <button className="rounded-[50%] bg-black p-1"> pre</button> 
-            <button className="rounded-[50%] bg-black p-1"> next</button> </div>
-            <p className="text-sm">playlist</p>
+          <div  className="bg-[url(https://source.unsplash.com/300x200/?jazz)] bg-center">
+            <div className="flex p-2 gap-4 text-white  ">  
+            <Link to={"/albumpage"}>
+            <button className="text-lg bg-black p-1 text-white  hover:bg-gray-800 focus:ring-4 focus:ring-green-300 font-medium rounded-3xl px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"> pre</button> 
+            </Link>
+            <Link to={"/albumpage"}>
+            <button className="text-lg bg-black p-1 text-white  hover:bg-gray-800 focus:ring-4 focus:ring-green-300 font-medium rounded-3xl px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+               next
+               </button> 
+               </Link></div>
             <h1 className="text-3xl text-white p-2 ml-4">RARAR Podcasters Italia </h1>
             <p className="text-sm text-white p-2 ml-1">  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, eaque voluptates numquam perferendis </p>
             <div className="flex">
@@ -104,20 +109,20 @@ export default function Playlist() {
             </div>
           </div>
         <div className="flex">
-          <table  className="w-4/5 text-sm text-left rtl:text-right text-gray-500  dark:text-gray-400">
+          <table  className="w-[100%] text-sm text-left rtl:text-right text-gray-500  dark:text-gray-400">
             
           <thead className=" text-xs text-gray-700 uppercase dark:text-gray-400">
             <tr className="text-white">
-                <th scope="col" className="px-6 py-3  dark:bg-gray-800">
+                <th scope="col" className="px-6 py-3 text-[17px] text-center dark:bg-gray-800">
                 Title
                 </th>
-                <th scope="col" className="px-6 py-3 ">
+                <th scope="col" className="px-6 py-3 text-[17px] text-center ">
                 Album
                 </th>
-                <th scope="col" className="px-6 py-3">
+                <th scope="col" className="px-6 py-3 text-[13px] text-center">
                 Release Date
                 </th>
-                <th scope="col" className="px-6 py-3  dark:bg-gray-800">
+                <th scope="col" className="px-6 py-3 text-[13px] text-center dark:bg-gray-800">
                 Data added
                 </th>
             </tr>
@@ -127,7 +132,7 @@ export default function Playlist() {
                 <th scope="row" className="px-3 py-1 font-medium ">
                     
                     <div className="flex">
-                    <img className="mr-6 w-[60px] h-[60px]" src={playImage}/>
+                    <img className="mr-6 w-[60px] h-[60px]" src={"https://source.unsplash.com/300x200/?jazz"}/>
                       <div className="flex-col text-white">
                       <p className="text-white mb-2 text-lg">Hipes dont lie</p>
                       <p className="text-white text-sm">With J. Cole, Quavo, Ty Dollar </p>

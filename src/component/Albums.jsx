@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import Container from './Container';
+import Container from './container/Container';
 import { Link } from 'react-router-dom';
 export default function Albums() {
   const [albumData, setAlbumData] = useState([]);
-  const fetcher = 'https://jsonplaceholder.typicode.com/albums';
+  const fetcher = 'https://jsonplaceholder.typicode.com/albums/';
 
   useEffect(() => {
     const getdata = async () => {
@@ -15,12 +15,10 @@ export default function Albums() {
   }, []);
   return (
     <div>
-      <div className='flex flex-wrap bg-black'>
+      <div className='flex flex-wrap bg-black gap-5'>
         {albumData.map((data, index) => {
           return (
-            <Link key={index} to={'/playlist'}>
               <Container title={data.title} description={data.title} />
-            </Link>
           );
         })}
       </div>

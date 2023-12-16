@@ -1,4 +1,4 @@
-import Container from "./Container";
+import Container from "../container/Container";
 import { Link } from "react-router-dom";
 export default function Section({ sectionName }) {
   
@@ -8,9 +8,6 @@ export default function Section({ sectionName }) {
       <h1 className="font-bold text-2xl p-3">Section name</h1>
       <div className=" flex grid-cols-4 gap-6">
         <Container/>
-        <Container />
-        <Container />
-        <Container />
         <Container />
         <Container />
         <Container />
