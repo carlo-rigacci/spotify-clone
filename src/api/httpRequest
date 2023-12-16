@@ -1,0 +1,10 @@
+export default function httpRequest(method, contentType, authorization, body) {
+  return {
+    method: method.toUpperCase(),
+    headers: {
+      'Content-Type': contentType,
+      Authorization: authorization,
+    },
+    body: body,
+  };
+}
