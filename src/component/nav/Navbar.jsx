@@ -3,6 +3,7 @@ import './Navbar.css'
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 
 
@@ -29,8 +30,12 @@ function Navbar () {
       
         {/*pulsanti di accesso */}  
             <div>
+                <Link to={"/signuppage"}>
                 <button className='btn1'>Sign Up</button>
+                </Link>
+                <Link to={"/loginpage"}>
                 <button className='btn2'>Log In</button>
+                </Link>
             </div>
        
           
