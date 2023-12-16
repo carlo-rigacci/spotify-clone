@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Wrapper from "./common/Wrapper.jsx";
-import SvgSwitcher from "./SvgSwitcher.jsx";
-import Search from "./Search.jsx";
+import SvgSwitcher from "./Svg/SvgSwitcher.jsx";
+import Search from "./section/Search.jsx";
 
 export default function Sidebar() {
   return (

@@ -1,4 +1,4 @@
-import Albums from "../component/Albums";
+import Albums from "../component/section/Albums";
 import Sidebar from "../component/Sidebar";
 import Navbar from "../component/nav/Navbar";
 import { Link } from "react-router-dom";

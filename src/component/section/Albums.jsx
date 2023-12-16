@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Container from './container/Container';
+import Container from '../container/Container';
 import { Link } from 'react-router-dom';
 export default function Albums() {
   const [albumData, setAlbumData] = useState([]);

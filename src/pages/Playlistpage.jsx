@@ -1,4 +1,4 @@
-import Playlist from "../component/Playlist";
+import Playlist from "../component/section/Playlist";
 import Sidebar from "../component/Sidebar";
 import Navbar from "../component/nav/Navbar";
 

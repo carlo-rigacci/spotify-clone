@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Link } from "react-router-dom";
-import Container from "./container/Container";
+import Container from "../container/Container";
 
 export default function Search() {
   const [title, setTitle] = useState([]);
   const [keys, setKeys] = useState([]);
-  let endpoint = "src/component/generi.json";
+  let endpoint = "src/component/common/generi.json";
   useEffect(() => {
     Axios.get(endpoint).then((res) => {
       setTitle([...res.data.generi]);

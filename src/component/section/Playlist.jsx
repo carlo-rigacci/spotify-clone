@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
-import heart from "../assets/heart-431.svg"
+import heart from "../../assets/heart-431.svg"
 
 export default function Playlist() {
 
