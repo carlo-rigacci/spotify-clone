@@ -52,11 +52,11 @@ export default function Loginpage() {
                 type="password"
                 name="password"
                 placeholder="Password"
-                class="w-[300px]  border border-gray-600 rounded-md p-3 text-white mb-12"
+                class="w-[300px]  border border-gray-600 rounded-md p-3 text-white mb-8"
                 style={{ backgroundColor: "rgba(18,18,18,255)" }}
               />
             </div>
-            <button class="w-[300px] bg-green-500 text-black font-bold p-2 rounded-2xl">
+            <button class="h-[50px] w-[300px] bg-green-500 text-black font-bold p-2 rounded-3xl">
               Accedi
             </button>
           </form>
