@@ -20,7 +20,7 @@ function Navbar () {
                 <button className='arrow2'><IoIosArrowForward /></button>
                 
                 {/*search bar*/}
-                <div className=' pointer-events-auto flex items-center justify-center bg-[#434343] gap-2 text-sm w-full py-2 px-3 ring-1 ring-slate-900/10 text-slate-500 rounded-2xl'>          
+                <div className='h-[40px] pointer-events-auto flex items-center justify-center bg-[#434343] gap-2 text-sm w-full py-2 px-3 ring-1 ring-slate-900/10 text-slate-500 rounded-2xl'>          
                 <i><CiSearch /></i>
                 <input className= 'search' type='text' placeholder='Search...'></input> 
                 </div>                                     
@@ -29,7 +29,7 @@ function Navbar () {
        
       
         {/*pulsanti di accesso */}  
-            <div>
+            <div className='btnContainer flex items-center justify-center w-fit'>
                 <Link to={"/signuppage"}>
                 <button className='btn1'>Sign Up</button>
                 </Link>

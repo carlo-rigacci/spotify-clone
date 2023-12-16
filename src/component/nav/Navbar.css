@@ -9,10 +9,8 @@ nav {
     justify-content: space-between;
     align-items: center; 
     flex-direction: row;
-    height: 50px;
-    padding: 0 50px;
+    height: 70px; 
     background-color: black;
-        
 }
 
 .wrapper{
@@ -26,7 +24,7 @@ nav {
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    padding: 50px;
+    margin-left: 10%;
 }
 
 
@@ -85,9 +83,7 @@ i {
     border: 1px solid white ;
     border-radius: 20px;
     color: black;
-    
-   
-
+    margin-right: 10%;
 }
 
 .btn2:hover {
@@ -96,3 +92,9 @@ i {
     transition: all 0.5s;
     
 }
+
+@media only screen and (max-width: 600px){
+       .row{
+        margin-left: 0px;
+       } 
+};

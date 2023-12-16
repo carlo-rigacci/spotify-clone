@@ -37,7 +37,7 @@ export default function Search() {
               to={`/playlistpage`} 
             >
               <div
-                className={` rounded-xl aspect-squarerounded-lg p-5 cursor-pointer text-3xl  overflow-hidden md:text-4xl font-semibold lg:text-3xl`}
+                className={` rounded-xl aspect-squarerounded-lg p-5 cursor-pointer text-2xl  overflow-hidden md:text-3xl font-semibold lg:text-3xl`}
                 style={{ backgroundColor: randomColor }}
               >
                 {titleName.titolo}
