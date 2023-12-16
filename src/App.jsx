@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route , Link } from 'react-router-dom';
 import Navbar from './component/nav/Navbar';
 import Footer from './component/footer/Footer';
-import Sidebar from './component/Sidebar';
+import Sidebar from './component/nav/Sidebar';
 import Home from './pages/Home';
 import Searchpage from './pages/Searchpage';
 import Playlist from './component/section/Playlist';

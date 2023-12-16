@@ -1,4 +1,4 @@
-import Sidebar from "../component/Sidebar";
+import Sidebar from "../component/nav/Sidebar";
 import Secondcontainer from "../component/container/Secondcontainer";
 import SectionContainer from "../component/container/SectionContainer";
 import Navbar from "../component/nav/Navbar";

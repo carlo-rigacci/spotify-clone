@@ -1,5 +1,5 @@
 import Albums from "../component/section/Albums";
-import Sidebar from "../component/Sidebar";
+import Sidebar from "../component/nav/Sidebar";
 import Navbar from "../component/nav/Navbar";
 import { Link } from "react-router-dom";
 

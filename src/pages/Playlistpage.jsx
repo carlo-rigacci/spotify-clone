@@ -1,5 +1,5 @@
 import Playlist from "../component/section/Playlist";
-import Sidebar from "../component/Sidebar";
+import Sidebar from "../component/nav/Sidebar";
 import Navbar from "../component/nav/Navbar";
 
 export default function Playlistpage() {

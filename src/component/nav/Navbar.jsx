@@ -11,7 +11,7 @@ export default Navbar
 
 function Navbar () {
     return (           
-    <nav className='Wrapper flex justify-between items-center'>
+    <nav className='Wrapper flex justify-between items-center sticky'>
 
         {/*pulsanti frecce */}       
             <div className= 'row'>
