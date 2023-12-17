@@ -11,6 +11,7 @@ import Albumpage from './pages/albumpage';
 import Playlistpage from './pages/Playlistpage';
 import Signuppage from './pages/Signuppage';
 import Loginpage from './pages/Loginpage';
+import Errorpage from './pages/Errorpage';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
-          <Route path='*' element={<Home/>}></Route>
+          <Route path='/error' element={<Errorpage/>}></Route>
           <Route path='/searchpage' element={<Searchpage />}></Route>
           <Route path='/playlist' element={<Playlist />}></Route>
           <Route path='/album' element={<Albums />}></Route>

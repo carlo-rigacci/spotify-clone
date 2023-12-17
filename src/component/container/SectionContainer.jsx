@@ -50,7 +50,7 @@ export default function SectionContainer() {
     >
       <div className='max-w-sm ml-2 hover:bg-slate-950 rounded overflow-hidden shadow-lg flex-col justify-center items-center'>
         <img
-          className='w-[150px] h-[150px]'
+          className='w-[280px] h-[150px] px-1 py-1 lg:items-center'
           src={song.img}
           alt='Sunset in the mountains'
         />

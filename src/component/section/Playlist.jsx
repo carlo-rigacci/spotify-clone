@@ -61,7 +61,63 @@ export default function Playlist() {
       Release : "6 th february ",
       added : "december",
       img : "https://source.unsplash.com/300x200/?rock"
-    }, 
+    }, {
+      id: 1, 
+      title : "Acadian Driftwood",
+      artist : "jk rowline",
+      Album : "none",
+      Release : "guilio",
+      added : "december",
+      img : "https://source.unsplash.com/300x200/?rock"
+    }, {
+      id: 2, 
+      title : "Ac-Cent-Tchu-Ate The Positive",
+      artist : "arijit sing ",
+      Album : "none",
+      Release : "6 th february ",
+      added : "december",
+      img : "https://source.unsplash.com/300x200/?pop"
+    },{
+      id: 3, 
+      title : "Act Naturally",
+      artist : "jk rowline",
+      Album : "none", 
+      Release : "december",
+      added : "gennio",
+      img: "https://source.unsplash.com/300x200/?hip-hop"
+    },{
+      id: 4, 
+      title : "After Hours",
+      artist : "jk rowline",
+      Album : "none",
+      Release : "guilio",
+      added : "december",
+      img: "https://source.unsplash.com/300x200/?electronic"
+    }, {
+      id: 5, 
+      title : "Aftermath",
+      artist : "arijit sing ",
+      Album : "none",
+      Release : "6 th february ",
+      added : "december",
+      img : "https://source.unsplash.com/300x200/?jazz"
+    },{
+      id: 6, 
+      title : "Ain't That Just Like A Woman",
+      artist : "jk rowline",
+      Album : "none",
+      Release : "guilio",
+      added : "december",
+      img : "https://source.unsplash.com/300x200/?classical"
+    }, {
+      id: 7, 
+      title : "Albert Flasher",
+      artist : "arijit sing ",
+      Album : "none",
+      Release : "6 th february ",
+      added : "december",
+      img : "https://source.unsplash.com/300x200/?rock"
+    }
   ]
   const listItems = titleSong.map((song , i) =>
   
