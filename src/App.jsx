@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { useStateProvider } from './utils/StateProvider';
-import { reducerCases } from './utils/Constants';
-import Spotify from './components/Spotify';
+import { useStateProvider } from './component/player/utils/StateProvider';
+import { reducerCases } from './component/player/utils/Constants';
+import Spotify from './component/player/Spotify';
 export default function App() {
   const [{ token }, dispatch] = useStateProvider();
   useEffect(() => {
