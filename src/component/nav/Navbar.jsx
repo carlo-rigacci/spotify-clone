@@ -3,13 +3,13 @@ import './Navbar.css'
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
-
+import { CiSearch } from "react-icons/ci";
 
 export default Navbar
 
 function Navbar () {
     return (           
-    <nav className='flex justify-between items-center sticky top-0 bg-black opacity-95'>
+    <nav className='flex justify-between p-1 items-center sticky top-0 bg-black opacity-95'>
 
             {/*pulsanti frecce */}       
             <div className= 'flex p-3'>

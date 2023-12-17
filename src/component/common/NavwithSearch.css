@@ -7,7 +7,7 @@
 
 i {
     color: white;
-    
+    transform: scale(1.2);    
 }
 i:hover {
     color: white;

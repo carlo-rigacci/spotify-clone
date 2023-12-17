@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import Footer from "./Footer";
-// import axios from "axios";
+import axios from "axios";
 import { useStateProvider } from "./utils/StateProvider";
 import Body from "./Body";
 // import { reducerCases } from "../utils/Constants";

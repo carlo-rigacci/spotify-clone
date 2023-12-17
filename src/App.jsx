@@ -13,6 +13,8 @@ import Signuppage from './pages/Signuppage';
 import Loginpage from './pages/Loginpage';
 import Errorpage from './pages/Errorpage';
 import NavwithSearch from './component/common/NavwithSearch';
+import Body from './component/player/Body';
+import Spotify from './component/player/Spotify';
 
 function App() {
   return (

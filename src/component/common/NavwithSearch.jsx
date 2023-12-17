@@ -3,7 +3,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import "./NavwithSearch.css";
-
+import { CiSearch } from "react-icons/ci";
 export default function NavwithSearch() {
   return (
     <div>
@@ -16,9 +16,9 @@ export default function NavwithSearch() {
     <button className='arrow2'><IoIosArrowForward /></button>
     </div>
     {/*search bar*/}
-    <div>
-            <input  className="search p-2 uppercase text-white"/>
-            <FaSearch />
+    <div className="flex">
+            <input  className="search p-1 uppercase text-white"/>
+            <i className="p-3 text-2xl hover:scale-150"> <CiSearch /></i>
      </div>       
  
 </div>
