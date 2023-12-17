@@ -11,13 +11,13 @@ export default function Signuppage() {
         </Link>
       </div>
 
-      <div class="flex justify-center items-center h-fit">
-        <div class="text-white text-center max-w-md w-full md:w-3/4 lg:w-1/2 xl:w-1/3">
-          <h1 class="font-bold text-3xl  mt-10 md:text-5xl mb-11 md:mb-9">
+      <div className="flex justify-center items-center h-fit">
+        <div className="text-white text-center max-w-md w-full md:w-3/4 lg:w-1/2 xl:w-1/3">
+          <h1 className="font-bold text-3xl  mt-10 md:text-5xl mb-11 md:mb-9">
             Iscriviti per iniziare ad ascoltare
           </h1>
           <form>
-            <label for="email" className="font-extrabold">
+            <label htmlFor="email" className="font-extrabold">
               Indirizzo e-mail
             </label>
             <br />
@@ -25,25 +25,25 @@ export default function Signuppage() {
               type="email"
               name="email"
               placeholder="nome@dominio.com"
-              class="mt-2 p-4 border border-gray-500 rounded-md w-[350px] bg-inherit"
+              className="mt-2 p-4 border border-gray-500 rounded-md w-[350px] bg-inherit"
             />
             <br />
-            <button class=" w-[350px] h-[60px] mt-7 p-3 font-bold text-lg bg-green-500 text-black rounded-3xl hover:bg-green-400 focus:outline-none focus:ring">
+            <button className=" w-[350px] h-[60px] mt-7 p-3 font-bold text-lg bg-green-500 text-black rounded-3xl hover:bg-green-400 focus:outline-none focus:ring">
               Avanti
             </button>
-            <hr class="my-12" />
-            <button class=" border border-gray-400 p-3 font-bold mb-3 text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
+            <hr className="my-12" />
+            <button className=" border border-gray-400 p-3 font-bold mb-3 text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
               Iscriviti con Google
             </button>
             <br />
-            <button class="  border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
+            <button className="  border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
               Iscriviti con Facebook
             </button>
-            <hr class="my-12 opacity-50" />
+            <hr className="my-12 opacity-50" />
           </form>
-          <div class="flex items-center justify-center gap-3">
-            <h2 class="opacity-60">Hai già un account?</h2>
-            <a href="/loginpage" class=" underline">
+          <div className="flex items-center justify-center gap-3">
+            <h2 className="opacity-60">Hai già un account?</h2>
+            <a href="/loginpage" className=" underline">
               Accedi qui.
             </a>
           </div>

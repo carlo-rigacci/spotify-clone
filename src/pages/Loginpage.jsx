@@ -12,62 +12,62 @@ export default function Loginpage() {
         </div>
       </div>
       <div
-        class="flex justify-center h-fit p-12"
+        className="flex justify-center h-fit p-12"
         style={{ backgroundColor: "rgba(18,18,18,255)" }}
       >
-        <div class="text-center w-screen p-8 bg-black rounded-lg shadow-xl">
-          <h1 class="text-white text-5xl font-extrabold mb-20 mt-20">
+        <div className="text-center w-screen p-8 bg-black rounded-lg shadow-xl">
+          <h1 className="text-white text-5xl font-extrabold mb-20 mt-20">
             Accedi a Spotify
           </h1>
           <div className="flex flex-col items-center gap-3">
-            <button class=" border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
+            <button className=" border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
               Continua con Google
             </button>
-            <button class="  border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
+            <button className="  border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
               Continua con Facebook
             </button>
-            <button class="mb-12 border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
+            <button className="mb-12 border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
               Continua con Apple
             </button>
           </div>
-          <hr class="my-4 border-gray-600" />
-          <form action="" class="mb-12 mt-12 text-white h-fit">
-            <div class="mb-2">
-              <label for="user" class="block mb-3">
+          <hr className="my-4 border-gray-600" />
+          <form action="" className="mb-12 mt-12 text-white h-fit">
+            <div className="mb-2">
+              <label htmlFor="user" className="block mb-3">
                 Indirizzo e-mail o nome utente
               </label>
               <input
                 type="text"
                 name="user"
                 placeholder="Indirizzo e-mail o nome utente"
-                class="w-[300px] border border-gray-600 rounded-md p-3 text-white"
+                className="w-[300px] border border-gray-600 rounded-md p-3 text-white"
                 style={{ backgroundColor: "rgba(18,18,18,255)" }}
               />
             </div>
             <div class="mb-2">
-              <label for="password" class="block mb-3 mt-8">
+              <label htmlFor="password" className="block mb-3 mt-8">
                 Password
               </label>
               <input
                 type="password"
                 name="password"
                 placeholder="Password"
-                class="w-[300px]  border border-gray-600 rounded-md p-3 text-white mb-8"
+                className="w-[300px]  border border-gray-600 rounded-md p-3 text-white mb-8"
                 style={{ backgroundColor: "rgba(18,18,18,255)" }}
               />
             </div>
-            <button class="h-[50px] w-[300px] bg-green-500 text-black font-bold p-2 rounded-3xl">
+            <button className="h-[50px] w-[300px] bg-green-500 text-black font-bold p-2 rounded-3xl">
               Accedi
             </button>
           </form>
 
-          <a href="" class="text-white underline mb-5">
+          <a href="" className="text-white underline mb-5">
             Hai dimenticato la password?
           </a>
-          <hr class="my-6 border-gray-600" />
+          <hr className="my-6 border-gray-600" />
           <div className="flex items-center justify-center gap-4">
-            <h2 class="text-white">Non hai un account?</h2>
-            <a href="/SignupPage" class="text-green-500 underline">
+            <h2 className="text-white">Non hai un account?</h2>
+            <a href="/SignupPage" className="text-green-500 underline">
               Iscriviti a Spotify
             </a>
           </div>

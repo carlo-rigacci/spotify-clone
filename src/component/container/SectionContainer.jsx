@@ -44,10 +44,9 @@ export default function SectionContainer() {
   ]
   
   const listItems = titleSong.map((song , i) =>{
-    return <div  className='flex'>
+    return <div  className='flex' key={i}>
        
-    <div key={i}
-    >
+    <div>
       <div className='max-w-sm ml-2 hover:bg-slate-950 rounded overflow-hidden shadow-lg flex-col justify-center items-center'>
         <img
           className='w-[280px] h-[150px] px-1 py-1 lg:items-center'

@@ -15,34 +15,30 @@ export default function Secondcontainer() {
         "Immerse yourself in the calming sounds of nature blended with serene music, creating a peaceful atmosphere.",
     },
   ];
-  const listItems = sleepList.map((song, i) => {
-    return (
-      <div className="flex">
-        <div key={i}>
-          <div className="max-w-sm w-[300px] ml-2 rounded overflow-hidden shadow-lg flex-col justify-center items-center hover:bg-slate-950">
-            <img
-              className="w-[300px] h-[150px] bg-bottom"
-              src={song.img}
-              alt="Sunset in the mountains"
-            />
-            <div className="px-3 py-2">
-              <div className="font-bold text-white text-lg mb-2">
-                {song.title}
-              </div>
-              <p className="text-white text-[13px]">{song.description}</p>
-            </div>
-          </div>
+
+  const listItems = sleepList.map((song, i) => (
+    <div key={i} className="max-w-sm w-[300px] ml-2 rounded overflow-hidden shadow-lg flex-col justify-center items-center hover:bg-slate-950">
+      <img
+        className="w-[300px] h-[150px] bg-bottom"
+        src={song.img}
+        alt="Sunset in the mountains"
+      />
+      <div className="px-3 py-2">
+        <div className="font-bold text-white text-lg mb-2">
+          {song.title}
         </div>
+        <p className="text-white text-[13px]">{song.description}</p>
       </div>
-    );
-  });
+    </div>
+  ));
+
   return (
     <div>
       <h1 className="font-bold text-3xl p-3 text-white text-mono hover:underline">
         Sleep
       </h1>
 
-      <Link to={"/playlistpage"}>
+      <Link to="/playlistpage">
         <div className="flex">{listItems}</div>
       </Link>
     </div>
