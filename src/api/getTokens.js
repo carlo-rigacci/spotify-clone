@@ -1,3 +1,6 @@
+import path from 'path';
+import { writeFile } from 'fs';
+
 const endpoint = 'https://accounts.spotify.com/api/token';
 
 const clientId = '2d112e6a83e240c68e5ca1219abdcf79';
@@ -39,7 +42,7 @@ export function httpRequest(method, contentType, authorization, body) {
 }
 
 // Funzione che fa una chiamata HTTP di tipo post all'endpoint di Spotify API per recuperare un access e refresh token
-async function getTokens() {
+async function tokenToJson() {
   try {
     const response = await fetch(
       endpoint,
@@ -50,10 +53,29 @@ async function getTokens() {
         'grant_type=client_credentials'
       )
     );
+
     const data = await response.json();
-    const accessToken = data.access_token; //access token scade ogni ora quindi bisognerebbe automatizzare il rinnovo
-    const refreshToken = data.refresh_token; //refresh token è necessario per rinnovare il token di accesso
-    return { accessToken, refreshToken };
+    const accessTokenAsString = JSON.stringify(data.access_token);
+    const refreshTokenAsString = JSON.stringify(data.refresh_token);
+
+    const tokenDirectoryPath = './token';
+
+    const accessTokenFileName = 'accessToken.json';
+    const accessTokenPath = path.join(tokenDirectoryPath, accessTokenFileName);
+
+    const refreshTokenFileName = 'refreshToken.json';
+    const refreshTokenPath = path.join(
+      tokenDirectoryPath,
+      refreshTokenFileName
+    );
+
+    writeFile(accessTokenPath, accessTokenAsString, (error) => {
+      console.error(error);
+    });
+
+    writeFile(refreshTokenAsString, accessTokenAsString, (error) => {
+      console.error(error);
+    });
   } catch (error) {
     console.error(error);
   }
