@@ -7,7 +7,6 @@ const SvgSecondo = ({ onClick }) => {
         <svg
           className=" outline-none"
           onClick={onClick}
-          role="button"
           tabIndex="0"
           viewBox="0 0 24 24"
           fill="white"
