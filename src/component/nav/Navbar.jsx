@@ -4,7 +4,6 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from 'react-router-dom';
 
-import { useRef } from 'react';
 
 export default Navbar
 
@@ -19,8 +18,6 @@ function Navbar () {
                 <button className='arrow2'><IoIosArrowForward /></button>
                 </div>
                 {/*search bar*/}
-                <div>
-                 </div>       
              
             </div>
        
