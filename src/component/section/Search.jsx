@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import { Link } from "react-router-dom";
 import Container from "../container/Container";
+import Footer from "../footer/Footer";
 
 export default function Search() {
   const [title, setTitle] = useState([]);
@@ -48,6 +49,7 @@ export default function Search() {
           );
         })}
       </div>
+      <Footer/>
     </div>
   );
 }

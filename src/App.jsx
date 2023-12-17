@@ -29,7 +29,7 @@ function App() {
           <Route path='/signuppage' element={<Signuppage/>}></Route>
           <Route path='/loginpage' element={<Loginpage/>}></Route>
         </Routes>
-        <Footer/>
+
       </Router>
     </div>
   );
