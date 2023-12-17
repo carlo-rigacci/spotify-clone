@@ -1,4 +1,4 @@
-<img src='/Spotify.png'></img>
+<img src='./Spotify.png'></img>
 
 # Spotify-Clone
 Il progetto è stato sviluppato come conclusione del corso FrontEnd e React, al fine di dimostrare un'interfaccia e funzionalità identiche alle piattaforma musicale Spotify, utilizzando le stesse caratteristiche e funzionalità. L'applicazione consente agli utenti di scoprire, accedere e organizzare la propria musica preferita in modo semplice e intuitivo.
