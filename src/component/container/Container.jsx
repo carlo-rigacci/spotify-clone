@@ -22,12 +22,12 @@ export default function Container(props) {
         <div className='max-w-sm rounded overflow-hidden shadow-lg flex-col justify-center items-center'>
           <img
             className='w-[230px] h-[150px]'
-            src='https://tailwindcss.com/img/card-top.jpg'
+            src='https://media.wired.com/photos/5926df59f3e2356fd800ab80/master/w_2560%2Cc_limit/GettyImages-543338600-S2.jpg'
             alt='Sunset in the mountains'
           />
           <Link to={"/playlistPage"}>
           {isHovered && (
-            <button
+            <button 
               className=' even:none text-white bg-green-600 float-right  focus:ring-green-300 font-medium rounded-3xl text-sm px-5 py-2.5 me-2 mb-2  '
             >
               <i class='fa-solid fa-play'></i>

@@ -12,6 +12,7 @@ import Playlistpage from './pages/Playlistpage';
 import Signuppage from './pages/Signuppage';
 import Loginpage from './pages/Loginpage';
 import Errorpage from './pages/Errorpage';
+import NavwithSearch from './component/common/NavwithSearch';
 
 function App() {
   return (
@@ -29,7 +30,6 @@ function App() {
           <Route path='/signuppage' element={<Signuppage/>}></Route>
           <Route path='/loginpage' element={<Loginpage/>}></Route>
         </Routes>
-
       </Router>
     </div>
   );
