@@ -44,7 +44,7 @@ export default function Loginpage() {
                 style={{ backgroundColor: "rgba(18,18,18,255)" }}
               />
             </div>
-            <div class="mb-2">
+            <div className="mb-2">
               <label htmlFor="password" className="block mb-3 mt-8">
                 Password
               </label>
