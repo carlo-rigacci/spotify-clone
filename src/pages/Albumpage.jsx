@@ -10,8 +10,9 @@ export default function Albumpage() {
           <div className=" w-[300px]"><Sidebar /></div>
         <div className='w-[100%]'><Navbar/>
         <div className='flex-col justify-start'>
-        <div className= {` bg-[url(https://source.unsplash.com/random/?Cryptocurrency&1)] flex items-center justify-center rounded-lg h-[200px] w-[790px] bg-center bg-no-repeat opacity-80 mb-4`} >
-          <hi className=" text-9xl text-white font-serif drop-shadow-2xl">Album</hi> 
+        <div className= {` bg-[url(https://source.unsplash.com/800x480/?rock)]  p-6 mt-4 flex items-center justify-center rounded-lg h-[200px] w-[790px] bg-center bg-no-repeat opacity-80 mb-4`} >
+          <hi className=" text-7xl first-letter:text-9xl  text-white font-serif drop-shadow-2xl shadow-[0_35px_60px_-15px_rgba(0,0,0,0.2)]">ALBUM</hi> 
+          
         </div>
         <div className="flex justify-between w-[790px]">
           <div className="flex font-sans text-lg hover:drop-shadow-2xl text-white p-3 gap-5">
@@ -22,6 +23,7 @@ export default function Albumpage() {
           <i class="fa fa-bars"></i>
           </div>
         </div>
+        
         </div>
         
         <Albums/>

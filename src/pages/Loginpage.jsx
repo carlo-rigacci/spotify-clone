@@ -1,5 +1,28 @@
 import { Link } from "react-router-dom";
+import { useState } from 'react'
+import {auth, googleProvider} from '../auth/Firebase'
+import { createUserWithEmailAndPassword , signInWithPopup ,signOut } from 'firebase/auth'
+
 export default function Loginpage() {
+  const [email , setEmail] = useState("");
+    const [password , setPassword] = useState("");
+    console.log(auth?.currentUser?.email);
+
+    const signIn = async () =>{
+        try{
+            await createUserWithEmailAndPassword(auth, email , password);
+        } catch(err) {
+            console.error(err);
+        }
+    }
+    const signInWithGoogle = async () =>{
+        try{
+            await signInWithPopup(auth,googleProvider);
+        } catch(err) {
+            console.error(err);
+        }
+    }
+
   return (
     <>
       <div>
@@ -20,15 +43,10 @@ export default function Loginpage() {
             Accedi a Spotify
           </h1>
           <div className="flex flex-col items-center gap-3">
-            <button className=" border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
+            <button  onClick={signInWithGoogle}  className=" border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
               Continua con Google
             </button>
-            <button className="  border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
-              Continua con Facebook
-            </button>
-            <button className="mb-12 border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
-              Continua con Apple
-            </button>
+            
           </div>
           <hr className="my-4 border-gray-600" />
           <form action="" className="mb-12 mt-12 text-white h-fit">
@@ -37,8 +55,10 @@ export default function Loginpage() {
                 Indirizzo e-mail o nome utente
               </label>
               <input
+              onChange={e => setEmail(e.target.value)}
                 type="text"
                 name="user"
+                required
                 placeholder="Indirizzo e-mail o nome utente"
                 className="w-[300px] border border-gray-600 rounded-md p-3 text-white"
                 style={{ backgroundColor: "rgba(18,18,18,255)" }}
@@ -49,6 +69,8 @@ export default function Loginpage() {
                 Password
               </label>
               <input
+               onChange={e => setPassword(e.target.value)}
+               required
                 type="password"
                 name="password"
                 placeholder="Password"
@@ -56,9 +78,10 @@ export default function Loginpage() {
                 style={{ backgroundColor: "rgba(18,18,18,255)" }}
               />
             </div>
-            <button className="h-[50px] w-[300px] bg-green-500 text-black font-bold p-2 rounded-3xl">
+            <button onClick={signIn} className="h-[50px] w-[300px] bg-green-500 text-black font-bold p-2 rounded-3xl">
               Accedi
             </button>
+            
           </form>
 
           <a href="" className="text-white underline mb-5">

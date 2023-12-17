@@ -7,8 +7,8 @@ export default function Playlist() {
   const titleSong = [
     {
       id: 1, 
-      title : "Acadian Driftwood",
-      artist : "jk rowline",
+      title : "S.O.S. (Dit Dit Dit Dash Dash Dash Dit Dit Dit) ",
+      artist : "The S.O.S. Band",
       Album : "none",
       Release : "guilio",
       added : "december",
@@ -19,14 +19,14 @@ export default function Playlist() {
       artist : "arijit sing ",
       Album : "none",
       Release : "6 th february ",
-      added : "december",
+      added : "may",
       img : "https://source.unsplash.com/300x200/?pop"
     }, {
       id: 3, 
-      title : "Act Naturally",
-      artist : "jk rowline",
+      title : "Sweet Inspiration",
+      artist : "The Sweet Inspirations",
       Album : "none", 
-      Release : "december",
+      Release : "october",
       added : "gennio",
       img: "https://source.unsplash.com/300x200/?hip-hop"
     },{
@@ -43,15 +43,15 @@ export default function Playlist() {
       artist : "arijit sing ",
       Album : "none",
       Release : "6 th february ",
-      added : "december",
+      added : "luna",
       img : "https://source.unsplash.com/300x200/?jazz"
     },{
       id: 6, 
-      title : "Ain't That Just Like A Woman",
-      artist : "jk rowline",
+      title : "T-Bone Shuffle ",
+      artist : "T-Bone Walker",
       Album : "none",
       Release : "guilio",
-      added : "december",
+      added : "march",
       img : "https://source.unsplash.com/300x200/?classical"
     }, {
       id: 7, 
@@ -63,32 +63,32 @@ export default function Playlist() {
       img : "https://source.unsplash.com/300x200/?rock"
     }, {
       id: 1, 
-      title : "Acadian Driftwood",
-      artist : "jk rowline",
+      title : "The Night Josh Tillman Came to Our Apartment ",
+      artist : "Father John Misty",
       Album : "none",
       Release : "guilio",
-      added : "december",
+      added : "febfuary",
       img : "https://source.unsplash.com/300x200/?rock"
     }, {
       id: 2, 
-      title : "Ac-Cent-Tchu-Ate The Positive",
-      artist : "arijit sing ",
+      title : "Four Notes - Paul's Tune ",
+      artist : "Paul Harvey ",
       Album : "none",
       Release : "6 th february ",
-      added : "december",
+      added : "october",
       img : "https://source.unsplash.com/300x200/?pop"
     },{
       id: 3, 
-      title : "Act Naturally",
-      artist : "jk rowline",
+      title : "God Of Every Story",
+      artist : "Laura Story",
       Album : "none", 
-      Release : "december",
+      Release : "jully",
       added : "gennio",
       img: "https://source.unsplash.com/300x200/?hip-hop"
     },{
       id: 4, 
-      title : "After Hours",
-      artist : "jk rowline",
+      title : "Highwomen",
+      artist : "The Highwomen",
       Album : "none",
       Release : "guilio",
       added : "december",
@@ -99,23 +99,23 @@ export default function Playlist() {
       artist : "arijit sing ",
       Album : "none",
       Release : "6 th february ",
-      added : "december",
+      added : "unknown",
       img : "https://source.unsplash.com/300x200/?jazz"
     },{
       id: 6, 
-      title : "Ain't That Just Like A Woman",
-      artist : "jk rowline",
+      title : "Jay-Z Blue ",
+      artist : "Jay-Z",
       Album : "none",
       Release : "guilio",
       added : "december",
       img : "https://source.unsplash.com/300x200/?classical"
     }, {
       id: 7, 
-      title : "Albert Flasher",
-      artist : "arijit sing ",
+      title : "Kids See Ghosts ",
+      artist : " Kids See Ghosts",
       Album : "none",
       Release : "6 th february ",
-      added : "december",
+      added : "january",
       img : "https://source.unsplash.com/300x200/?rock"
     }
   ]
@@ -147,7 +147,7 @@ export default function Playlist() {
   return (
     <div className="bg-gradient-to-r from-black to-gray-900">
         <div className="flex-col">
-          <div  className="bg-[url(https://source.unsplash.com/300x200/?jazz)] bg-center">
+          <div  className="bg-[url(https://source.unsplash.com/800x480/?rock)] bg-center">
             <div className="flex p-2 gap-4 text-white  ">  
             <Link to={"/albumpage"}>
             <button className="text-lg bg-black p-1 text-white  hover:bg-gray-800 focus:ring-4 focus:ring-green-300 font-medium rounded-3xl px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"> pre</button> 

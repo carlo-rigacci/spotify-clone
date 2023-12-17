@@ -13,8 +13,6 @@ import Signuppage from './pages/Signuppage';
 import Loginpage from './pages/Loginpage';
 import Errorpage from './pages/Errorpage';
 import NavwithSearch from './component/common/NavwithSearch';
-import Body from './component/player/Body';
-import Spotify from './component/player/Spotify';
 
 function App() {
   return (
@@ -23,7 +21,8 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
-          <Route path='/error' element={<Errorpage/>}></Route>
+          <Route path='/home' element={<Home/>}></Route>
+          <Route path='*' element={<Errorpage/>}></Route>
           <Route path='/searchpage' element={<Searchpage />}></Route>
           <Route path='/playlist' element={<Playlist />}></Route>
           <Route path='/album' element={<Albums />}></Route>
