@@ -22,7 +22,7 @@ export default function Container(props) {
         <div className='max-w-sm rounded overflow-hidden shadow-lg flex-col justify-center items-center'>
           <img
             className='w-[230px] h-[150px]'
-            src='https://tailwindcss.com/img/card-top.jpg'
+            src='https://media.wired.com/photos/5926df59f3e2356fd800ab80/master/w_2560%2Cc_limit/GettyImages-543338600-S2.jpg'
             alt='Sunset in the mountains'
           />
           <Link to={"/playlistPage"}>
