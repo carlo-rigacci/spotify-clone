@@ -4,7 +4,7 @@ import SvgSwitcher from "../Svg/SvgSwitcher.jsx";
 
 export default function Sidebar() {
   return (
-    <nav className=" bg-black flex flex-col sticky top-5">
+    <nav className=" bg-black flex flex-col sticky top-0">
       <div className="  flex flex-col w-[300px] h-sceen">
         <div className=" bg-[#121212] flex flex-col m-2 rounded-md gap-3">
           <div
@@ -29,7 +29,7 @@ export default function Sidebar() {
               </Link>
             </a>
             
-            <div className="">
+            <div className=" text-[#b8b8b8]  hover:text-[#f5f5f5] focus:text-[#fff] transition-all">
               <Link to={"/searchpage"}>
               <SvgSwitcher />
               </Link>
@@ -55,7 +55,7 @@ export default function Sidebar() {
                 </span>
               </button>
             </div>
-            <div className=" flex flex-col items-center justify-center relative top-[550px]">
+            <div className=" flex flex-col items-center justify-center relative top-[430px]">
               <footer className=" flex flex-col items-center bg-[#121212] p-2 w-[280px]">
                 <div className=" grid grid-cols-2 gap-2 text-xs">
                   <a href="">Legal information</a>

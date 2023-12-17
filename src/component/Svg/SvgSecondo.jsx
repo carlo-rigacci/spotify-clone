@@ -2,8 +2,8 @@ import React from "react";
 
 const SvgSecondo = ({ onClick }) => {
   return (
-    <button className=" flex gap-4 text-[#b8b8b8] active:text-white">
-      <span className=" text-[#b8b8b8] hover:text-[#f5f5f5] focus:text-[#fff] transition-all">
+    <button className=" flex gap-4 text-[#b8b8b8]  hover:text-[#f5f5f5] focus:text-[#fff] transition-all">
+      <span className=" ">
         <svg
           className=" outline-none"
           onClick={onClick}
