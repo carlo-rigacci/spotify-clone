@@ -28,7 +28,7 @@ export default function Sidebar() {
               </Link>
             </p>
             
-            <div className=" text-[#b8b8b8]  hover:text-[#f5f5f5] focus:text-[#fff] transition-all">
+            <div className=" text-[#b8b8b8]  hover:text-[#f5f5f5]  transition-all">
               <Link to={"/searchpage"}>
               <SvgSwitcher />
               </Link>
