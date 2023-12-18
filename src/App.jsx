@@ -12,6 +12,7 @@ import Playlistpage from './pages/Playlistpage';
 import Signuppage from './pages/Signuppage';
 import Loginpage from './pages/Loginpage';
 import Errorpage from './pages/Errorpage';
+import Help from './pages/Help';
 import NavwithSearch from './component/common/NavwithSearch';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path='/' element={<Home/>}></Route>
           <Route path='/home' element={<Home/>}></Route>
           <Route path='*' element={<Errorpage/>}></Route>
+          <Route path='help' element={<Help/>}></Route>
           <Route path='/searchpage' element={<Searchpage />}></Route>
           <Route path='/playlist' element={<Playlist />}></Route>
           <Route path='/album' element={<Albums />}></Route>
