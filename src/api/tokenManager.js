@@ -37,7 +37,7 @@ async function refreshToken(refreshToken) {
   } catch (err) {
     console.error('Error refreshing tokens: ' + err);
     console.log('Attempting to generate tokens...');
-    await generateTokens();
+    return await generateTokens();
   }
 }
 
@@ -57,6 +57,7 @@ async function generateTokens() {
     tokenToJSON(data.access_token, 'access-token.json');
     tokenToJSON(data.refresh_token, 'refresh-token.json');
     console.log('Tokens generated successfully');
+    return data.access_token;
   } catch (err) {
     console.error('Error generating tokens: ' + err);
   }
