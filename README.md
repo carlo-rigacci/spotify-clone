@@ -32,7 +32,6 @@ npm run dev
 ## Principali funzionalità sviluppate nel progetto
 - **Registrazione utente:** Pagina che permette all'utente di registrarsi per il primo accesso al sito.
 - **Home:** Home page del progetto, dove puoi esplorare una vasta libreria musicale e scoprire nuovi artisti.
-- **Ricerche avanzate:** Trova le tue canzoni preferite con una potente funzione di ricerca.
 - **Playlist:** Seleziona la playlist desiderata e visualizza il contenuto.
 
 ## Costruzione
@@ -43,9 +42,7 @@ I componenti e le pagine responsive sono stati creati utilizzando gli strumenti 
 - Vite
 - TailwindCSS
 - React-Router-DOM
-- Axios
 - React-icons
-- Swiper
 
 ### Utilità
 - API [Spotify Web API](https://developer.spotify.com/)
