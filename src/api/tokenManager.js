@@ -11,7 +11,7 @@ const clientId = client_data.clientId;
 const clientSecret = client_data.clientSecret;
 const credentialsBase64Encoded = btoa(clientId + clientSecret);
 
-export default async function getToken() {
+export async function getToken() {
   try {
     return access_token;
   } catch (err) {
