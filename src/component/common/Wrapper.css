@@ -1,7 +1,21 @@
+*{
+ 
+}
+ 
 .wrapper {
     background-color: rgba(18,18,18,255);
     color: white;
     border-radius: 10px;
-    height: 80vh;
-    margin: 0 8px 8px 8px;
+    height: 81vh;
+    /* height: fit-content; */
+    /* margin: 2px; */
+    margin-left: 8px;
+    position: absolute;
+    top: 150px;
+    width: 284px;
+    border-radius: 8px;
+    padding: 0;
+    /* gap: 3px; */
+    box-sizing: border-box;
+ 
 }
