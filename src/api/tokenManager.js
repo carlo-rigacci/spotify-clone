@@ -3,15 +3,18 @@ import { writeFile, readFile } from 'fs/promises';
 
 const endpoint = 'https://accounts.spotify.com/api/token';
 
+const access_token = await parseFile('access-token.json').access_token;
+const refresh_token = await parseFile('refresh-token.json').refresh_token;
+
 const clientId = parseFile('client-credentials.json').clientId;
 const clientSecret = parseFile('client-credentials.json').clientSecret;
 const credentialsBase64Encoded = btoa(clientId + clientSecret);
 
 export default async function getToken() {
   try {
-    return await parseFile('access-token.json').access_token;
+    return access_token;
   } catch (err) {
-    return await refreshToken(parseFile('refresh-token.json'));
+    return await refreshToken(refresh_token);
   }
 }
 
@@ -34,7 +37,7 @@ async function refreshToken(refreshToken) {
   } catch (err) {
     console.error('Error refreshing tokens: ' + err);
     console.log('Attempting to generate tokens...');
-    generateTokens();
+    await generateTokens();
   }
 }
 
@@ -55,7 +58,7 @@ async function generateTokens() {
     tokenToJSON(data.refresh_token, 'refresh-token.json');
     console.log('Tokens generated successfully');
   } catch (err) {
-    console.err('Error generating tokens: ' + err);
+    console.error('Error generating tokens: ' + err);
   }
 }
 
@@ -67,7 +70,7 @@ async function tokenToJSON(json, tokenFileName) {
     );
     console.log(tokenFileName + ' written successfully');
   } catch (err) {
-    console.err(err);
+    console.err('Error writing JSON to file "' + tokenFileName + '":' + err);
   }
 }
 
@@ -76,8 +79,12 @@ function createPath(tokenFileName) {
 }
 
 async function parseFile(fileName) {
-  const jsonAsString = await readFile(createPath(fileName));
-  return JSON.parse(jsonAsString);
+  try {
+    const jsonAsString = await readFile(createPath(fileName));
+    return JSON.parse(jsonAsString);
+  } catch (err) {
+    console.error('Error parsing file: ' + err);
+  }
 }
 
 export function httpRequest(method, contentType, authorization, body) {
