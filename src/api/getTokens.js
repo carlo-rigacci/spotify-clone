@@ -1,5 +1,5 @@
 import path from 'path';
-import { writeFile } from 'fs/promises';
+import { writeFile, readFile } from 'fs/promises';
 
 const endpoint = 'https://accounts.spotify.com/api/token';
 
@@ -9,9 +9,28 @@ const credentialsBase64Encoded = btoa(clientId + clientSecret);
 
 //access e refresh token entrambi aggiornati
 export var access_token;
-export var refresh_token;
+export var refresh_token = parseToken('RefreshToken.json');
 
-//Funzione che rinnova l'access token tra un ora
+async function parseToken(fileName) {
+  const accessTokenAsString = await readFile(createPath(fileName));
+  return (accessTokenAsObject = JSON.parse(accessTokenAsString));
+}
+
+async function getToken() {
+  const tokenAsString = parseToken('AccessToken.json');
+
+  if (accessTokenAsObject) {
+    if (accessTokenAsObject.expires_in > 0) {
+      return accessTokenAsObject.access_token;
+    } else {
+      await generateTokens();
+      const accessNewTokenAsString = await parseToken('AccessToken.json');
+      return accessNewTokenAsString.access_token;
+    }
+  }
+}
+
+//Funzione che rinnova l'access token
 async function refreshToken() {
   const response = await fetch(
     'https://accounts.spotify.com/api/token',
@@ -40,7 +59,7 @@ export function httpRequest(method, contentType, authorization, body) {
 }
 
 // Funzione che fa una chiamata HTTP di tipo post all'endpoint di Spotify API per recuperare un access e refresh token
-async function tokenToJson() {
+async function generateTokens() {
   try {
     const response = await fetch(
       endpoint,
@@ -61,13 +80,17 @@ async function tokenToJson() {
 }
 
 async function tokenToJSON(json, tokenFileName) {
-  const tokenJSONasString = JSON.stringify(json, tokenFileName);
-  const tokenDirectoryPath = './token';
-  const tokenPath = path.join(tokenDirectoryPath, tokenFileName);
   try {
-    await writeFile(tokenPath, tokenJSONasString);
+    await writeFile(
+      createPath(tokenFileName),
+      JSON.stringify(json, tokenFileName)
+    );
     console.log(tokenFileName + ' written successfully');
   } catch (error) {
     console.error(error);
   }
+}
+
+function createPath(tokenFileName) {
+  return path.join('./token', tokenFileName);
 }
