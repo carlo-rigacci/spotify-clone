@@ -5,6 +5,7 @@ import { createUserWithEmailAndPassword , signInWithPopup ,signOut } from 'fireb
 
 export default function Loginpage() {
   const [email , setEmail] = useState("");
+  const [contGoogle , setContGoogle] = useState(false);
     const [password , setPassword] = useState("");
     console.log(auth?.currentUser?.email);
 
@@ -16,12 +17,15 @@ export default function Loginpage() {
         }
     }
     const signInWithGoogle = async () =>{
-        try{
-            await signInWithPopup(auth,googleProvider);
-        } catch(err) {
-            console.error(err);
-        }
-    }
+      try{
+          await signInWithPopup(auth,googleProvider);
+          setTimeout(() => {
+            setContGoogle(true);
+          }, 2000);
+      } catch(err) {
+          console.error(err);
+      }
+  }
 
   return (
     <>
@@ -43,9 +47,18 @@ export default function Loginpage() {
             Accedi a Spotify
           </h1>
           <div className="flex flex-col items-center gap-3">
+          { !contGoogle ? (<div className="flex flex-col items-center gap-3">
             <button  onClick={signInWithGoogle}  className=" border border-gray-400 p-3 font-bold  text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring">
               Continua con Google
             </button>
+            </div>) : (
+              <div className="flex justify-center items-center">
+              
+              <Link to="/home">
+                <button className=" border border-gray-400 p-3 bg-green-500 font-bold mb-3 text-white w-[350px] rounded-3xl hover:border-gray-100 focus:outline-none focus:ring"> GO TO HOME</button>
+              </Link>
+            </div>
+            )}
             
           </div>
           <hr className="my-4 border-gray-600" />
