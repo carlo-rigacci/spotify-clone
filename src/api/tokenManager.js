@@ -6,8 +6,9 @@ const endpoint = 'https://accounts.spotify.com/api/token';
 const access_token = await parseFile('access-token.json').access_token;
 const refresh_token = await parseFile('refresh-token.json').refresh_token;
 
-const clientId = parseFile('client-credentials.json').clientId;
-const clientSecret = parseFile('client-credentials.json').clientSecret;
+const client_data = await parseFile('client-credentials.json');
+const clientId = client_data.clientId;
+const clientSecret = client_data.clientSecret;
 const credentialsBase64Encoded = btoa(clientId + clientSecret);
 
 export default async function getToken() {
