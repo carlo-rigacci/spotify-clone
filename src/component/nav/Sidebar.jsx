@@ -71,7 +71,7 @@ export default function Sidebar() {
               <h3 className="mb-6">We'll keep you updated on new episodes</h3>
               <button className="text-black bg-white p-3 rounded-full hover:scale-110 text-md font-bold">Browse podcasts</button>
             </div>
-            <div className="flex flex-col items-center justify-center relative top-[130px]">
+            <div className="flex flex-col items-center justify-center relative top-[60px]">
               <footer className="flex flex-col items-center bg-[#121212] p-2 w-[280px]">
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   <p className="underline cursor-pointer">Legal information</p>
