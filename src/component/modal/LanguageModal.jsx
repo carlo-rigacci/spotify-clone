@@ -37,8 +37,9 @@ const LanguageModal = () => {
           onRequestClose={closeModal}
           contentLabel="Language Modal"
           ariaHideApp={false}
-          className=" bg-slate-900 p-8 rounded w-3/4 mx-auto my-12 "
-          overlayClassName="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black opacity-100 "
+          className=" bg-gray-900 p-8 rounded w-3/4 mx-auto my-auto"
+          overlayClassName="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black opacity-100"
+          
         >
            <div className="text-white ">
           <h2 className="text-2xl mb-4 font-bold ">Select Your Language</h2>
@@ -299,117 +300,117 @@ const LanguageModal = () => {
             <div className="text-gray-500">Odia</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("ਪੰਜਾਬੀ")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("ਪੰਜਾਬੀ")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">ਪੰਜਾਬੀ</div>
             <div className="text-gray-500">Punjabi</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("پنجابی")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("پنجابی")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">پنجابی</div>
             <div className="text-gray-500">Punjabi (Naskh)</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Polski")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Polski")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Polski</div>
             <div className="text-gray-500">Polish</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Português do Brasil")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Português do Brasil")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Português do Brasil</div>
             <div className="text-gray-500">Brazilian Portuguese</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Português")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Português")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Português</div>
             <div className="text-gray-500">European Portuguese</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Română")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Română")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Română</div>
             <div className="text-gray-500">Romanian</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Русский")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Русский")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Русский</div>
             <div className="text-gray-500">Russian</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Slovenčina")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Slovenčina")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Slovenčina</div>
             <div className="text-gray-500">Slovak</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Slovenski")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Slovenski")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Slovenski</div>
             <div className="text-gray-500">Slovenian</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Srpski")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Srpski")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Srpski</div>
             <div className="text-gray-500">Serbian</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Svenska")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Svenska")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Svenska</div>
             <div className="text-gray-500">Swedish</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Kiswahili")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Kiswahili")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Kiswahili</div>
             <div className="text-gray-500">Swahili</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("தமிழ்")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("தமிழ்")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">தமிழ்</div>
             <div className="text-gray-500">Tamil</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("తెలుగు")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("తెలుగు")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">తెలుగు</div>
             <div className="text-gray-500">Telugu</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("ภาษาไทย")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("ภาษาไทย")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">ภาษาไทย</div>
             <div className="text-gray-500">Thai</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Türkçe")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Türkçe")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Türkçe</div>
             <div className="text-gray-500">Turkish</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Українська")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Українська")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Українська</div>
             <div className="text-gray-500">Ukrainian</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("اردو")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("اردو")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">اردو</div>
             <div className="text-gray-500">Urdu</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("Tiếng Việt")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("Tiếng Việt")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">Tiếng Việt</div>
             <div className="text-gray-500">Vietnamese</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("简体中文")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("简体中文")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">简体中文</div>
             <div className="text-gray-500">Simplified Chinese</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("繁體中文 (香港)")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("繁體中文 (香港)")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">繁體中文 (香港)</div>
             <div className="text-gray-500">Chinese (Traditional) Hong Kong</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("中文")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("中文")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">中文</div>
             <div className="text-gray-500">Traditional Chinese</div>
           </button>
 
-          <button onClick={() => changeLanguageSelect("IsiZulu")} className="text-left pl-8 text-xl h-24 w-100 hover-bg-slate-700">
+          <button onClick={() => changeLanguageSelect("IsiZulu")} className="text-left pl-8 text-xl h-24 w-100 hover:bg-slate-700">
             <div className="font-bold">IsiZulu</div>
             <div className="text-gray-500">Zulu</div>
           </button>
@@ -417,7 +418,7 @@ const LanguageModal = () => {
           </div>
           <button
             onClick={closeModal}
-            className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-xl"
           >
             Close
           </button>
