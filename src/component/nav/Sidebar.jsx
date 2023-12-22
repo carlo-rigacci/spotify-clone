@@ -4,6 +4,7 @@ import SvgSwitcher from '../Svg/SvgSwitcher.jsx';
 import LanguageModal from '../modal/LanguageModal.jsx';
 import Logo from '../../assets/svg/Logo.jsx';
 import Library from '../../assets/svg/Library.jsx';
+import Add from '../../assets/svg/Add.jsx';
 
 export default function Sidebar() {
   return (
@@ -46,12 +47,7 @@ export default function Sidebar() {
               </button>
               <button className='flex flex-row gap-3 w-[20px] ml-[100px]'>
                 <span className='hover:bg-[#222222] hover:rounded-l'>
-                  <svg className='w-[20px] h-[20px]'>
-                    <path
-                      className=''
-                      d='M15.25 8a.75.75 0 0 1-.75.75H8.75v5.75a.75.75 0 0 1-1.5 0V8.75H1.5a.75.75 0 0 1 0-1.5h5.75V1.5a.75.75 0 0 1 1.5 0v5.75h5.75'
-                    ></path>
-                  </svg>
+                  <Add />
                 </span>
               </button>
             </div>
