@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import Wrapper from '../common/Wrapper.jsx';
-import SvgSwitcher from '../Svg/SvgSwitcher.jsx';
-import LanguageModal from '../modal/LanguageModal.jsx';
-import Logo from '../../assets/svg/Logo.jsx';
-import Library from '../../assets/svg/Library.jsx';
-import Add from '../../assets/svg/Add.jsx';
+import Wrapper from '../../common/Wrapper.jsx';
+import LanguageModal from '../../modal/LanguageModal.jsx';
+import Logo from '../../../assets/svg/Logo.jsx';
+import Library from '../../../assets/svg/Library.jsx';
+import Add from '../../../assets/svg/Add.jsx';
+import SidebarButtonsContainer from './ButtonsContainer.jsx';
 
 export default function Sidebar() {
   return (
@@ -20,20 +20,7 @@ export default function Sidebar() {
                 <Logo />
               </p>
             </Link>
-          </div>
-          <div className=' flex flex-col gap-3 pl-4 pb-4'>
-            <p className='text-[#b8b8b8]  hover:text-[#f5f5f5] focus:text-[#fff] transition-all'>
-              <Link to={'/'}>
-                <i className=' fa-solid fa-house mr-3 text-[20px] active:text-white'></i>{' '}
-                Home
-              </Link>
-            </p>
-
-            <div className=' text-[#b8b8b8]  hover:text-[#f5f5f5]  transition-all'>
-              <Link to={'/searchpage'}>
-                <SvgSwitcher />
-              </Link>
-            </div>
+          <SidebarButtonsContainer />
           </div>
         </div>
         <Wrapper>
