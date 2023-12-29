@@ -4,7 +4,7 @@ import LanguageModal from '../../modal/LanguageModal.jsx';
 import Logo from '../../../assets/svg/Logo.jsx';
 import Library from '../../../assets/svg/Library.jsx';
 import Add from '../../../assets/svg/Add.jsx';
-import SidebarButtonsContainer from './ButtonsContainer.jsx';
+import SidebarButtonsContainer from './Container.jsx';
 
 export default function Sidebar() {
   return (

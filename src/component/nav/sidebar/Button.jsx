@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 
 export default function Button({
-  svgState,
+  activeButton,
   ActiveSVG,
   InactiveSVG,
   displayText,
   linkTo,
-  toggleHandler,
+  onClick,
 }) {
   return (
-    <Link to={linkTo} onClick={toggleHandler}>
-      {svgState ? <ActiveSVG /> : <InactiveSVG />}
+    <Link to={linkTo} onClick={onClick}>
+      {activeButton === displayText ? <ActiveSVG /> : <InactiveSVG />}
       {displayText}
     </Link>
   );
