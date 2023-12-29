@@ -24,7 +24,7 @@ export default function Container() {
   const [activeButton, setActiveButton] = useState(null);
 
   return (
-    <div className='flex'>
+    <div className='flex flex-col gap-3'>
       {buttonArray.map((button, key) => (
         <Button
           key={key}

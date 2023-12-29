@@ -9,9 +9,17 @@ export default function Button({
   onClick,
 }) {
   return (
-    <Link to={linkTo} onClick={onClick}>
+    <Link
+      to={linkTo}
+      onClick={onClick}
+      className='text-[#b8b8b8] hover:text-[#f5f5f5] transition-all flex gap-2 text-xl'
+    >
       {activeButton === displayText ? <ActiveSVG /> : <InactiveSVG />}
-      {displayText}
+      <span
+        className={activeButton === displayText && `text-[#f5f5f5] font-bold`}
+      >
+        {displayText}
+      </span>
     </Link>
   );
 }
