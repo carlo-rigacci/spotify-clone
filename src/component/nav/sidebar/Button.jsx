@@ -4,7 +4,7 @@ export default function Button({
   activeButton,
   ActiveSVG,
   InactiveSVG,
-  displayText,
+  displayText = '',
   linkTo,
   onClick,
 }) {

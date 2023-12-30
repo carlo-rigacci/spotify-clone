@@ -4,6 +4,7 @@ import Active_HOME from '../../../assets/svg/sidebar/home/Active.jsx';
 import Inactive_HOME from '../../../assets/svg/sidebar/home/Inactive.jsx';
 import Active_SEARCH from '../../../assets/svg/sidebar/search/Active.jsx';
 import Inactive_SEARCH from '../../../assets/svg/sidebar/search/Inactive.jsx';
+import SpotifyLogo from '../../../assets/svg/Logo.jsx';
 
 const buttonArray = [
   {
@@ -21,10 +22,11 @@ const buttonArray = [
 ];
 
 export default function Container() {
-  const [activeButton, setActiveButton] = useState(null);
+  const [activeButton, setActiveButton] = useState('Home');
 
   return (
     <div className='flex flex-col gap-3'>
+      <Button InactiveSVG={SpotifyLogo} linkTo={'/'} />
       {buttonArray.map((button, key) => (
         <Button
           key={key}

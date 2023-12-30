@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import Wrapper from '../../common/Wrapper.jsx';
 import LanguageModal from '../../modal/LanguageModal.jsx';
-import Logo from '../../../assets/svg/Logo.jsx';
 import Library from '../../../assets/svg/Library.jsx';
 import Add from '../../../assets/svg/Add.jsx';
 import SidebarButtonsContainer from './Container.jsx';
@@ -12,15 +11,10 @@ export default function Sidebar() {
       <div className='  flex flex-col w-[300px]'>
         <div className=' bg-[#121212] flex flex-col m-2 rounded-md gap-3'>
           <div
-            className=' pl-4 pt-5
+            className='pl-4 pt-5
           pb-1'
           >
-            <Link to={'/'}>
-              <p className='text-white '>
-                <Logo />
-              </p>
-            </Link>
-          <SidebarButtonsContainer />
+            <SidebarButtonsContainer />
           </div>
         </div>
         <Wrapper>
