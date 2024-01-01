@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Wrapper from '../../common/Wrapper.jsx';
 import LanguageModal from '../../modal/LanguageModal.jsx';
 import Library from '../../../assets/svg/Library.jsx';
@@ -9,7 +8,7 @@ export default function Sidebar() {
   return (
     <nav className=' bg-black flex flex-col sticky top-0'>
       <div className='  flex flex-col w-[300px]'>
-        <div className=' bg-[#121212] flex flex-col m-2 rounded-md gap-3'>
+        <div className='bg-[#121212] m-2 rounded-md'>
           <div
             className='pl-4 pt-5
           pb-1'
