@@ -8,7 +8,7 @@ export default function LibraryControls() {
         <Library />
         <span>Your Library</span>
       </div>
-      <div className='hover:bg-[#ffffff0b] hover:fill-white hover:cursor-pointer hover:rounded-[20px] w-7 h-7 flex justify-center items-center'>
+      <div className='hover:bg-[#ffffff0b] hover:fill-white hover:cursor-pointer hover:rounded-full w-7 h-7 flex justify-center items-center'>
         <Add />
       </div>
     </div>
