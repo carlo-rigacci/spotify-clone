@@ -3,6 +3,7 @@ import LanguageModal from '../../modal/LanguageModal.jsx';
 import Library from '../../../assets/svg/Library.jsx';
 import Add from '../../../assets/svg/Add.jsx';
 import SidebarButtonsContainer from './Container.jsx';
+import LibraryControls from './LibraryControls.jsx';
 
 export default function Sidebar() {
   return (
@@ -18,19 +19,7 @@ export default function Sidebar() {
         </div>
         <Wrapper>
           <div className='flex flex-col items-center fill-[#b8b8b8] text-[#b8b8b8] transition-all pt-5 ml-2  mr-2 mb-2'>
-            <div className='flex items-center hover:fill-white hover:text-white'>
-              <button className='flex flex-row gap-3'>
-                <span>
-                  <Library />
-                </span>
-                Your Library
-              </button>
-              <button className='flex flex-row gap-3 w-[20px] ml-[100px]'>
-                <span className='hover:bg-[#222222] hover:rounded-l'>
-                  <Add />
-                </span>
-              </button>
-            </div>
+            <LibraryControls />
             <div
               className='playlist w-full mt-10 p-4 rounded-xl text-white'
               style={{ backgroundColor: 'rgba(36,36,36,255)' }}
