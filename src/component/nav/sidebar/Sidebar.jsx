@@ -1,6 +1,7 @@
 import Wrapper from '../../common/Wrapper.jsx';
 import LanguageModal from '../../modal/LanguageModal.jsx';
 import SidebarButtonsContainer from './Container.jsx';
+import Footer from './Footer.jsx';
 import LibraryControls from './LibraryControls.jsx';
 import Notification from './Notification.jsx';
 
@@ -30,18 +31,8 @@ export default function Sidebar() {
               buttonText='Browse podcasts'
             />
             <div className='flex flex-col h-fit items-center justify-center relative top-[5px]'>
-              <footer className='flex flex-col h-fit items-center bg-[#121212] p-2 w-[280px]'>
-                <div className='grid grid-cols-2 gap-2 text-xs'>
-                  <p className='underline cursor-pointer'>Legal information</p>
-                  <p className='underline cursor-pointer'>Privacy Center</p>
-                  <p className='underline cursor-pointer'>Privacy Policy</p>
-                  <p className='underline cursor-pointer'>Cookie settings</p>
-                  <p className='underline cursor-pointer'>Announcement info</p>
-                  <p className='underline cursor-pointer'>Accessibility</p>
-                  <p className='underline cursor-pointer'>Cookie Policy</p>
-                </div>
-                <LanguageModal />
-              </footer>
+              <Footer />
+              <LanguageModal />
             </div>
           </div>
         </Wrapper>
