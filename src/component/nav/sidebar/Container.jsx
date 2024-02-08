@@ -4,7 +4,7 @@ import Active_HOME from '../../../assets/svg/sidebar/home/Active.jsx';
 import Inactive_HOME from '../../../assets/svg/sidebar/home/Inactive.jsx';
 import Active_SEARCH from '../../../assets/svg/sidebar/search/Active.jsx';
 import Inactive_SEARCH from '../../../assets/svg/sidebar/search/Inactive.jsx';
-import SpotifyLogo from '../../../assets/svg/Logo.jsx';
+import SpotifyLogo from '../../../assets/svg/sidebar/Logo.jsx';
 
 const buttonArray = [
   {

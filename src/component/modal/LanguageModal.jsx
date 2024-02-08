@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import Localization from "../../assets/svg/sidebar/Localization";
+import LocalizationSVG from "../../assets/svg/sidebar/Localization";
  
 const LanguageModal = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -27,7 +27,7 @@ const LanguageModal = () => {
         onClick={openModal}
         className="mx-4 mt-4 justify-center items-center border-2 focus:text-[#fff]  focus:border-[#fff] focus:scale-110  p-1 px-3 rounded-2xl text-sm  flex gap-2 hover:text-[#fff] hover:border-[#fff] hover:scale-110"
       >
-        <Localization/>    
+        <LocalizationSVG/>    
         {selectedLanguage}
       </button>
       <div className="flex flex-col justify-center items-center">

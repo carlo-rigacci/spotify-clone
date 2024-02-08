@@ -1,4 +1,4 @@
-export default function Active() {
+export default function ActiveSVG() {
   return (
     <svg
     tabIndex='0'

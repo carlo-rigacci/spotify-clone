@@ -1,4 +1,4 @@
-export default function Localization() {
+export default function LocalizationSVG() {
   return (
     <svg
       width='16px'

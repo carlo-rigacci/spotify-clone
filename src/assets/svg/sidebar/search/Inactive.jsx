@@ -1,4 +1,4 @@
-export default function Inactive() {
+export default function InactiveSVG() {
   return (
     <svg
       className=' outline-none'

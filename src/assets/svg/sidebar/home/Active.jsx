@@ -1,4 +1,4 @@
-export default function Active() {
+export default function ActiveSVG() {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
