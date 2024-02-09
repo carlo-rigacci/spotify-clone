@@ -1,5 +1,5 @@
 import Wrapper from '../../common/Wrapper.jsx';
-import LanguageModal from '../../modal/LanguageModal.jsx';
+import Language from './language/Language.jsx';
 import SidebarButtonsContainer from './Container.jsx';
 import Footer from './Footer.jsx';
 import LibraryControls from './LibraryControls.jsx';
@@ -32,7 +32,7 @@ export default function Sidebar() {
             />
             <div className='flex flex-col h-fit items-center justify-center relative top-[5px]'>
               <Footer />
-              <LanguageModal />
+              <Language />
             </div>
           </div>
         </Wrapper>
